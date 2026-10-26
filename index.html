@@ -3,15 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Park JinSeong | SW · AI Developer</title>
-  <meta name="description" content="SW · AI 개발자 박진성의 연구·프로젝트 포트폴리오" />
+  <title>박진성 | SW · AI 개발자 포트폴리오</title>
+  <meta name="description" content="신입 SW · AI 개발자 박진성의 포트폴리오. 예측 모델 개발, 영상 객체 탐지, Docker 기반 실행 환경 표준화, 방위산업 실무 교육." />
 
-  <!-- Fonts: Pretendard (본문) + IBM Plex Mono (라벨/숫자). 로드 실패 시 시스템 폰트로 대체 -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css" />
@@ -19,439 +15,287 @@
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-  <!-- =========================
-       Header (공통)
-  ========================= -->
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">PARK JINSEONG</span>
-          <span class="brand-sub">SW · AI DEVELOPER</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="주 메뉴">
-        <ul class="nav-list">
-          <li><a href="index.html" aria-current="page">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-        <a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+  <header class="gnb" id="gnb">
+    <div class="wrap gnb-in">
+      <a class="logo" href="index.html" aria-label="박진성 포트폴리오 홈"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+      <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="research.html">연구</a>
+        <a href="skills.html">기술</a>
+        <a href="achievements.html">이력</a>
+        <a class="m-only" href="contact.html">연락하기</a>
       </nav>
+      <a class="btn btn-primary btn-sm gnb-cta" href="contact.html">연락하기</a>
+      <button class="gnb-toggle" id="gnbToggle" type="button" aria-expanded="false" aria-controls="gnbNav" aria-label="메뉴 열기"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <!-- =========================
-         Hero
-    ========================= -->
-    <section class="hero on-dark">
-      <!-- 장식용 기술 그래픽 (정적) -->
-      <svg class="hero-graphic" viewBox="0 0 600 600" fill="none" aria-hidden="true">
-        <g stroke="currentColor">
-          <circle cx="300" cy="300" r="286" stroke-opacity=".14"/>
-          <circle cx="300" cy="300" r="280" stroke-width="10" stroke-opacity=".12" stroke-dasharray="1.2 13.46"/>
-          <circle cx="300" cy="300" r="214" stroke-opacity=".10"/>
-          <circle cx="300" cy="300" r="142" stroke-opacity=".10" stroke-dasharray="3 6"/>
-          <circle cx="300" cy="300" r="70" stroke-opacity=".10"/>
-          <path d="M300 0v600M0 300h600" stroke-opacity=".09"/>
-          <path d="M98 98l404 404M502 98L98 502" stroke-opacity=".05"/>
-          <path d="M290 300h20M300 290v20" stroke-opacity=".35"/>
-          <path d="M300 300L452 148" stroke-opacity=".22"/>
-          <circle cx="452" cy="148" r="4" stroke-opacity=".45"/>
-        </g>
-        <g fill="currentColor" fill-opacity=".38" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="1">
-          <text x="288" y="10">000</text>
-          <text x="572" y="296">090</text>
-          <text x="288" y="598">180</text>
-          <text x="4" y="296">270</text>
-        </g>
-      </svg>
-
-      <div class="container">
-        <div class="hero-content">
-          <span class="eyebrow">SW · AI Developer Portfolio</span>
-          <h1 class="hero-title">연구를 실제 시스템으로<br><em>구현하는</em> 개발자,<br>박진성입니다.</h1>
-          <p class="hero-lead">
-            창원대학교 컴퓨터공학과 분산멀티미디어 연구실에서 <strong>AI 모델 개발과 백엔드 서버 관리</strong>를 수행하며,
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+      <div class="wrap">
+        <div class="hero-in">
+          <p class="kicker reveal">신입 SW · AI 개발자 박진성</p>
+          <h1 class="display">
+            <span class="line"><span>연구를</span></span>
+            <span class="line"><span class="grad-text">동작하는 시스템으로</span></span>
+          </h1>
+          <p class="lead reveal" style="--d:2">
+            창원대학교 컴퓨터공학과 분산멀티미디어 연구실에서 AI 모델 개발과 백엔드 서버 관리를 맡으며,
             연구에서 얻은 지식을 공모전과 프로젝트를 통해 실제 결과물로 구현해 왔습니다.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="projects.html">프로젝트 보기 <span class="arrow" aria-hidden="true">→</span></a>
-            <a class="btn btn-ghost-dark" href="research.html">연구 성과 <span class="arrow" aria-hidden="true">→</span></a>
+          <div class="hero-actions reveal" style="--d:3">
+            <a class="btn btn-primary" href="projects.html">프로젝트 보기 <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-secondary" href="research.html">연구 성과</a>
           </div>
         </div>
-
-        <!-- 핵심 기술 경험: 아래 섹션과 상세 페이지의 기존 내용을 요약한 색인 -->
-        <ul class="domains" aria-label="핵심 기술 경험">
-          <li class="domain">
-            <p class="domain-no">AI · DATA</p>
-            <p class="domain-title">예측 모델 개발 · 검증</p>
-            <p class="domain-desc">Autoencoder · XGBoost 기반 Go-Around 예측 모델(KCI 1저자), 산사태 확률 예측 모델 성능 검증</p>
-          </li>
-          <li class="domain">
-            <p class="domain-no">INFRA</p>
-            <p class="domain-title">실행 환경 표준화</p>
-            <p class="domain-desc">라이브러리 버전 충돌 문제 해결을 위해 Docker로 Low-GloSea6 모델을 컨테이너화, 연구 환경 표준화</p>
-          </li>
-          <li class="domain">
-            <p class="domain-no">DEFENSE</p>
-            <p class="domain-title">신뢰성 분석 · 무기체계</p>
-            <p class="domain-desc">KF-21 정비일지 기반 MTBF · MTTR · 가용도 산출, 전자전 재머 사양 설계 (방위산업실무 교육 팀 프로젝트)</p>
-          </li>
-          <li class="domain">
-            <p class="domain-no">RESEARCH</p>
-            <p class="domain-title">연구 성과</p>
-            <p class="domain-desc">KCI 논문 3편 · 특허 출원 1건 · 저작권 등록 1건 · 학회 발표 6회</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- =========================
-         Profile
-    ========================= -->
-    <section class="profile" aria-labelledby="profileTitle">
-      <div class="container profile-grid">
-        <figure class="portrait reveal">
-          <div class="portrait-mat">
-            <div class="portrait-frame">
-              <img src="images/profile.jpg" alt="박진성 프로필 사진" width="160" height="200">
-            </div>
-          </div>
-        </figure>
-
-        <div class="reveal">
-          <span class="eyebrow">Profile</span>
-          <div class="profile-name-row">
-            <h2 class="profile-name" id="profileTitle">박진성</h2>
-            <span class="profile-en">Park JinSeong</span>
-          </div>
-          <p class="profile-role">신입 SW AI 개발자</p>
-
-          <table class="info-table">
-            <tbody>
-              <tr>
-                <th scope="row"><span class="label">Affiliation</span>소속</th>
-                <td>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생</td>
-              </tr>
-              <tr>
-                <th scope="row"><span class="label">Period</span>연구 활동 기간</th>
-                <td><span class="mono">2022.05 – 현재</span></td>
-              </tr>
-              <tr>
-                <th scope="row"><span class="label">Work</span>주요 업무</th>
-                <td>
-                  <ul class="bullet-list">
-                    <li>차세대 전산과학 기술접합을 위한 기반 기술 개발 과제 참여</li>
-                    <li>백엔드 서버 관리 및 AI 모델 개발</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row"><span class="label">Training</span>교육 이력</th>
-                <td>
-                  [방산] 방위산업실무 : 핵심기술 이해 및 신뢰도확보 설계 과정 수료
-                  <span class="info-sub">렛유인에듀 · K-Digital Credit · 2026.06 – 2026.07 · 고용노동부 주관</span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="hero-media reveal-scale" aria-hidden="true">
+          <div class="tile t1"><img src="images/Go_around.png" alt=""></div>
+          <div class="tile t2"><img src="images/SW_deepfake.png" alt=""></div>
+          <div class="tile t3"><img src="images/SEJONG.png" alt=""></div>
         </div>
       </div>
     </section>
 
-    <!-- =========================
-         Key metrics
-    ========================= -->
-    <section class="metrics" aria-label="주요 성과 지표">
-      <div class="container">
-        <div class="panel-grid">
-          <div class="metric reveal">
-            <div class="metric-top"><span class="label">Publications</span></div>
-            <p class="metric-value">3<small>편</small></p>
-            <p class="metric-desc"><b>KCI 등재 논문</b>1저자 2편 · 2저자 1편</p>
-          </div>
-          <div class="metric reveal">
-            <div class="metric-top"><span class="label">Patent</span></div>
-            <p class="metric-value">1<small>건</small></p>
-            <p class="metric-desc"><b>특허 출원</b>누비자 자전거 재배치 알고리즘</p>
-          </div>
-          <div class="metric reveal">
-            <div class="metric-top"><span class="label">Copyright</span></div>
-            <p class="metric-value">1<small>건</small></p>
-            <p class="metric-desc"><b>저작권 등록</b>제조기업 사무자동화 RPA SW</p>
-          </div>
-          <div class="metric reveal">
-            <div class="metric-top"><span class="label">Presentations</span></div>
-            <p class="metric-value">6<small>회</small></p>
-            <p class="metric-desc"><b>학회 발표</b>한국정보전자통신기술학회</p>
-          </div>
-        </div>
+    <!-- Stats -->
+    <section class="stats" aria-label="주요 성과">
+      <div class="wrap stats-in">
+        <div class="stat reveal"><p class="stat-v"><span data-count="3">3</span><small>편</small></p><p class="stat-k">KCI 등재 논문</p><p class="stat-d">1저자 2편 · 2저자 1편</p></div>
+        <div class="stat reveal" style="--d:1"><p class="stat-v"><span data-count="1">1</span><small>건</small></p><p class="stat-k">특허 출원</p><p class="stat-d">누비자 자전거 재배치 알고리즘</p></div>
+        <div class="stat reveal" style="--d:2"><p class="stat-v"><span data-count="1">1</span><small>건</small></p><p class="stat-k">저작권 등록</p><p class="stat-d">제조기업 사무자동화 RPA SW</p></div>
+        <div class="stat reveal" style="--d:3"><p class="stat-v"><span data-count="6">6</span><small>회</small></p><p class="stat-k">학회 발표</p><p class="stat-d">한국정보전자통신기술학회</p></div>
       </div>
     </section>
 
-    <!-- =========================
-         Introduction
-    ========================= -->
-    <section class="section">
-      <div class="container intro-grid">
-        <div class="reveal">
-          <span class="eyebrow">01 — Introduction</span>
-          <h2 class="section-title">아이디어에 머무르지 않고<br>결과물로 증명합니다.</h2>
-        </div>
-        <div class="reveal">
-          <blockquote class="intro-quote">“지금 자면 꿈을 꿀 수 있지만 지금 노력하면 꿈을 이룰 수 있다.”</blockquote>
-          <p class="intro-body">
-            저는 연구에서 얻은 지식을 실제 상황에 연결하기 위해 연구실 동기들과 함께 공모전에 참여하며,
-            팀을 이끌어 AI 모델 및 소프트웨어를 개발하고 계획을 실행하는 과정을 즐깁니다.
-            단순히 아이디어에 머무르지 않고 결과물로 구현해내는 과정에서 성취감을 느끼며,
-            스프린트를 통해 더 큰 성과를 만들어내는 것을 중요하게 생각합니다.
-          </p>
-          <p class="intro-more"><a class="text-link" href="about.html">About 자세히 보기 <span aria-hidden="true">→</span></a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- =========================
-         Featured projects
-    ========================= -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">02 — Featured Projects</span>
-            <h2 class="section-title">대표 프로젝트</h2>
-            <p class="section-desc">팀장으로 기획부터 데이터 전처리, 모델 설계·학습까지 수행한 AI 프로젝트입니다.</p>
+    <!-- Capabilities -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">역량</span>
+            <h2 class="h-sec">연구와 프로젝트로<br>다져 온 기술</h2>
           </div>
-          <a class="text-link" href="projects.html">전체 프로젝트 10건 <span aria-hidden="true">→</span></a>
+          <a class="link-arrow reveal" href="about.html">소개 자세히 보기 <span class="arr" aria-hidden="true">→</span></a>
         </div>
 
-        <div class="project-grid project-grid--featured">
-          <article class="project-card reveal">
-            <figure class="project-figure">
-              <img src="images/Go_around.png" alt="Go-Around 챗봇 화면: 제주공항 날씨와 Go-Around 확률 표시" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h3 class="project-title">Go-Around 모델 개발 및 제주공항 날씨 분석</h3>
-              <p class="project-context">2025 SW중심대학 디지털 경진대회 : SW부문</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2025.05 – 2025.07</span><span>AI · Data</span></p>
-              <p class="project-desc">제주공항 날씨 데이터 및 항공 데이터를 기반으로 항공기 Go-Around 상황 예측 모델 개발. PyTorch와 데이터 시각화 활용.</p>
-              <p class="project-result"><span class="k">성과</span>KCI 등재 1저자 논문 게재</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd>기획 및 팀 관리, 데이터 수집/전처리, 모델 설계·학습, 성능 최적화</dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>Autoencoder</li><li>XGBoost</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/go-around.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Go-around" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
-            </div>
+        <div class="bento">
+          <article class="b-wide reveal">
+            <span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>
+            <h3 class="b-title">예측 모델 개발 · 검증</h3>
+            <p class="b-desc">Autoencoder와 XGBoost를 활용한 Go-Around 예측 모델(KCI 1저자 논문), XGBoost 산사태 확률 예측 모델의 하이퍼파라미터 튜닝과 성능 평가 및 검증.</p>
+            <a class="b-ref link-arrow" href="projects/go-around.html">Go-Around 프로젝트 <span class="arr" aria-hidden="true">→</span></a>
           </article>
-
-          <article class="project-card reveal">
-            <figure class="project-figure">
-              <img src="images/SW_deepfake.png" alt="TSSDNet 모델 구조 다이어그램" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h3 class="project-title">SW-딥페이크 음성 검출</h3>
-              <p class="project-context">2024 SW중심대학 디지털 경진대회 AI 부문(딥페이크 검출)</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2024</span><span>AI · Audio</span></p>
-              <p class="project-desc">딥러닝 기반 음성 딥페이크 검출 프로젝트. PyTorch 및 GPU 환경 사용, 데이터 전처리와 모델 학습 진행.</p>
-              <p class="project-result"><span class="k">성과</span>전국 13등</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd>계획 수립, 데이터 전처리, 모델 설계·학습, 성능 평가 및 최적화</dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>GPU</li><li>Tssdnet</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/deepfake.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/SW---Deepfake-2024-/tree/master" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
-            </div>
+          <article class="b-narrow b-grad reveal" style="--d:1">
+            <span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></span>
+            <h3 class="b-title">실행 환경 표준화</h3>
+            <p class="b-desc">라이브러리 버전 충돌 문제 해결을 위해 Docker로 Low-GloSea6 모델을 컨테이너화, 연구 환경 표준화.</p>
+            <span class="b-note">KCI 1저자 논문</span>
           </article>
-
-          <article class="project-card reveal">
-            <figure class="project-figure">
-              <img src="images/SEJONG.png" alt="YOLOv8 객체 탐지 결과: 도로 위 보행자와 킥보드 탐지" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h3 class="project-title">자율주행 위험감지 시스템</h3>
-              <p class="project-context">2024 세종AI 경진대회</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2024</span><span>AI · Vision</span></p>
-              <p class="project-desc">자율주행 차량 위험 감지 모델 개발, 영상 데이터 기반 객체 탐지 및 위험 상황 예측. PyTorch와 OpenCV 활용.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd>기획 및 일정 관리, YOLOv8 객체 탐지 모델 개발, 위험 판단 알고리즘 설계</dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>U-Net</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/sejong-ai.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Sejong-AI" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
-            </div>
+          <article class="b-half reveal">
+            <span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><rect x="7" y="8" width="6" height="7" rx="1"/><path d="M15 9h2M15 13h2"/></svg></span>
+            <h3 class="b-title">영상 객체 탐지</h3>
+            <p class="b-desc">YOLOv8 기반 객체 탐지 모델 개발, YOLOv8 · U-Net · MiDaS를 통합한 보행자 위험 감지 연구(KCI 2저자 논문).</p>
+            <a class="b-ref link-arrow" href="projects/sejong-ai.html">자율주행 위험감지 시스템 <span class="arr" aria-hidden="true">→</span></a>
+          </article>
+          <article class="b-half b-dark reveal" style="--d:1">
+            <span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+            <h3 class="b-title">신뢰성 분석 · 무기체계</h3>
+            <p class="b-desc">KF-21 정비일지 기반 MTBF · MTTR · 가용도(Ao) 산출, 전자전 재머 사양 설계, 무기체계 기획.</p>
+            <span class="b-note">방위산업실무 교육 팀 프로젝트</span>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- =========================
-         Research
-    ========================= -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">03 — Research</span>
-            <h2 class="section-title">연구 성과</h2>
-            <p class="section-desc">창원대학교 컴퓨터공학과 분산멀티미디어 연구실에서 차세대 전산과학 기술접합을 위한 기반 기술 개발 과제에 참여하며 얻은 성과입니다.</p>
+    <!-- Featured projects -->
+    <section class="sec sec-soft">
+      <div class="wrap carousel" data-carousel>
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">프로젝트</span>
+            <h2 class="h-sec">직접 기획하고 만든 것들</h2>
           </div>
-          <a class="text-link" href="research.html">연구 성과 전체 보기 <span aria-hidden="true">→</span></a>
+          <div class="car-btns reveal">
+            <button class="car-btn" type="button" data-prev aria-label="이전 프로젝트">←</button>
+            <button class="car-btn" type="button" data-next aria-label="다음 프로젝트">→</button>
+          </div>
         </div>
 
-        <div class="research-layout">
-          <ol class="paper-list">
-            <li class="paper reveal">
-              <div class="paper-thumb"><img src="images/goaround-paper.png" alt="논문 「제주공항 공항·기상 데이터 기반 Go-Around 예측 모델 연구」 첫 페이지" loading="lazy"></div>
-              <div>
-                <div class="paper-badges"><span class="badge badge-solid">KCI</span><span class="badge">1저자</span></div>
-                <h3 class="paper-title">제주공항 공항·기상 데이터 기반 Go-Around 예측 모델 연구</h3>
-                <p class="paper-desc">제주공항의 항공기 및 기상 데이터를 기반으로 Autoencoder와 XGBoost를 활용해 Go-Around 상황을 사전에 예측할 수 있는 모델을 개발한 연구.</p>
-                <a class="paper-link" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003239448" target="_blank" rel="noopener">논문 보기 ↗</a>
-              </div>
-            </li>
-            <li class="paper reveal">
-              <div class="paper-thumb"><img src="images/docker-paper.png" alt="논문 「기상 예측 모델의 Localization을 위한 Docker 기반 Containerization 기법 연구」 첫 페이지" loading="lazy"></div>
-              <div>
-                <div class="paper-badges"><span class="badge badge-solid">KCI</span><span class="badge">1저자</span></div>
-                <h3 class="paper-title">기상 예측 모델의 Localization을 위한 Docker 기반 Containerization 기법 연구</h3>
-                <p class="paper-desc">다양한 라이브러리 버전 충돌 문제를 해결하기 위해 Low-GloSea6 모델을 컨테이너화하고 연구 환경 표준화를 달성한 경험을 기술한 연구.</p>
-                <a class="paper-link" href="https://koreascience.or.kr/article/JAKO202405557060542.page" target="_blank" rel="noopener">논문 보기 ↗</a>
-              </div>
-            </li>
-            <li class="paper reveal">
-              <div class="paper-thumb"><img src="images/vision-paper.png" alt="논문 「GloSea6에서 YOLOv8을 활용한 시각장애인 보행자 위험 감지 기법」 첫 페이지" loading="lazy"></div>
-              <div>
-                <div class="paper-badges"><span class="badge badge-solid">KCI</span><span class="badge">2저자</span></div>
-                <h3 class="paper-title">GloSea6에서 YOLOv8을 활용한 시각장애인 보행자 위험 감지 기법</h3>
-                <p class="paper-desc">YOLOv8, U-Net, MiDaS를 통합한 실시간 보행자 위험 감지 시스템을 설계하고, 횡단보도 및 주변 장애물을 인식하는 알고리즘 성능을 검증한 연구.</p>
-                <a class="paper-link" href="https://doi.org/10.17661/jkiiect.2024.17.6.451" target="_blank" rel="noopener">논문 보기 ↗</a>
-              </div>
-            </li>
-          </ol>
+        <div class="track">
+          <article class="card reveal">
+            <div class="card-media"><img src="images/Go_around.png" alt="Go-Around 챗봇 화면: 제주공항 날씨와 Go-Around 확률 표시" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Data</span><span class="chip">2025</span></div>
+              <h3 class="card-title"><a class="stretched" href="projects/go-around.html">Go-Around 모델 개발 및 제주공항 날씨 분석</a></h3>
+              <p class="card-ctx">2025 SW중심대학 디지털 경진대회 : SW부문</p>
+              <p class="card-result">KCI 등재 1저자 논문 게재</p>
+              <div class="card-foot"><span class="link-arrow">자세히 보기 <span class="arr" aria-hidden="true">→</span></span></div>
+            </div>
+          </article>
+          <article class="card reveal" style="--d:1">
+            <div class="card-media"><img src="images/SW_deepfake.png" alt="TSSDNet 모델 구조 다이어그램" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Audio</span><span class="chip">2024</span></div>
+              <h3 class="card-title"><a class="stretched" href="projects/deepfake.html">SW-딥페이크 음성 검출</a></h3>
+              <p class="card-ctx">2024 SW중심대학 디지털 경진대회 AI 부문(딥페이크 검출)</p>
+              <p class="card-result">전국 13등</p>
+              <div class="card-foot"><span class="link-arrow">자세히 보기 <span class="arr" aria-hidden="true">→</span></span></div>
+            </div>
+          </article>
+          <article class="card reveal" style="--d:2">
+            <div class="card-media"><img src="images/SEJONG.png" alt="YOLOv8 객체 탐지 결과: 도로 위 보행자와 킥보드 탐지" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Vision</span><span class="chip">2024</span></div>
+              <h3 class="card-title"><a class="stretched" href="projects/sejong-ai.html">자율주행 위험감지 시스템</a></h3>
+              <p class="card-ctx">2024 세종AI 경진대회</p>
+              <p class="card-desc">YOLOv8 기반 객체 탐지 모델 개발과 위험 상황 판단 알고리즘 설계.</p>
+              <div class="card-foot"><span class="link-arrow">자세히 보기 <span class="arr" aria-hidden="true">→</span></span></div>
+            </div>
+          </article>
+          <article class="card reveal" style="--d:3">
+            <div class="card-media"><img src="images/영주시.png" alt="산사태 예측 파이프라인: 기상·토양도·임상도·산사태 이력 데이터 통합, 전처리 후 SVM·Random Forest·Gradient Boosting 모델링" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Data · AI</span><span class="chip">2024</span></div>
+              <h3 class="card-title"><a class="stretched" href="projects.html#p-landslide">영주시 산사태 확률 분석</a></h3>
+              <p class="card-ctx">2024 영주시 산사태 발생 확률 예측 프로젝트</p>
+              <p class="card-desc">XGBoost 모델 하이퍼파라미터 튜닝, 모델 성능 평가 및 검증.</p>
+              <div class="card-foot"><span class="link-arrow">프로젝트 목록에서 보기 <span class="arr" aria-hidden="true">→</span></span></div>
+            </div>
+          </article>
+          <article class="card reveal" style="--d:4">
+            <div class="card-media"><img src="images/국방.png" alt="국방부 군대앱 화면: 로그인, 관리자 화면, 결식 확인 QR코드 화면" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">App · Web</span><span class="chip">2024</span></div>
+              <h3 class="card-title"><a class="stretched" href="projects.html#p-army">국방부 군대앱</a></h3>
+              <p class="card-ctx">2024 국방부 군대앱(식단, PX 정보 제공) 개발</p>
+              <p class="card-desc">React Native 프론트엔드, Node.js 백엔드 API, MySQL 데이터 연동.</p>
+              <div class="card-foot"><span class="link-arrow">프로젝트 목록에서 보기 <span class="arr" aria-hidden="true">→</span></span></div>
+            </div>
+          </article>
+        </div>
+        <p class="reveal"><a class="btn btn-outline" href="projects.html">전체 프로젝트 10건 보기 <span class="arr" aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
 
-          <aside class="records reveal" aria-label="기타 연구 실적">
-            <div class="records-head"><span class="label">Research Records</span></div>
-            <ul class="records-list">
-              <li><p class="k">특허출원</p><p class="v">창원시 누비자 자전거 재배치 알고리즘</p></li>
-              <li><p class="k">저작권 등록완료</p><p class="v">제조기업 사무자동화를 위한 RPA 소프트웨어</p></li>
-              <li><p class="k">수상</p><p class="v">2024년도 한국정보전자통신기술학회 우수논문상</p></li>
-              <li><p class="k">학회 발표 6회</p><p class="v">한국정보전자통신기술학회 종합학술발표회 2024 – 2025</p></li>
-            </ul>
-          </aside>
+    <!-- Research -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">연구</span>
+            <h2 class="h-sec">KCI 등재 논문 3편</h2>
+            <p class="lead">창원대학교 컴퓨터공학과 분산멀티미디어 연구실에서 차세대 전산과학 기술접합을 위한 기반 기술 개발 과제에 참여하며 얻은 성과입니다.</p>
+          </div>
+          <a class="link-arrow reveal" href="research.html">연구 성과 전체 보기 <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+
+        <article class="paper reveal">
+          <div class="paper-thumb"><img src="images/goaround-paper.png" alt="논문 「제주공항 공항·기상 데이터 기반 Go-Around 예측 모델 연구」 첫 페이지" loading="lazy"></div>
+          <div>
+            <div class="card-tags"><span class="chip chip-blue">KCI 등재</span><span class="chip">1저자</span></div>
+            <h3 class="paper-title">제주공항 공항·기상 데이터 기반 Go-Around 예측 모델 연구</h3>
+            <p class="paper-desc">제주공항의 항공기 및 기상 데이터를 기반으로 Autoencoder와 XGBoost를 활용해 Go-Around 상황을 사전에 예측할 수 있는 모델을 개발한 연구.</p>
+            <a class="link-arrow" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003239448" target="_blank" rel="noopener">논문 보기 <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="paper reveal">
+          <div class="paper-thumb"><img src="images/docker-paper.png" alt="논문 「기상 예측 모델의 Localization을 위한 Docker 기반 Containerization 기법 연구」 첫 페이지" loading="lazy"></div>
+          <div>
+            <div class="card-tags"><span class="chip chip-blue">KCI 등재</span><span class="chip">1저자</span></div>
+            <h3 class="paper-title">기상 예측 모델의 Localization을 위한 Docker 기반 Containerization 기법 연구</h3>
+            <p class="paper-desc">다양한 라이브러리 버전 충돌 문제를 해결하기 위해 Low-GloSea6 모델을 컨테이너화하고 연구 환경 표준화를 달성한 경험을 기술한 연구.</p>
+            <a class="link-arrow" href="https://koreascience.or.kr/article/JAKO202405557060542.page" target="_blank" rel="noopener">논문 보기 <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+        <article class="paper reveal">
+          <div class="paper-thumb"><img src="images/vision-paper.png" alt="논문 「GloSea6에서 YOLOv8을 활용한 시각장애인 보행자 위험 감지 기법」 첫 페이지" loading="lazy"></div>
+          <div>
+            <div class="card-tags"><span class="chip chip-blue">KCI 등재</span><span class="chip">2저자</span></div>
+            <h3 class="paper-title">GloSea6에서 YOLOv8을 활용한 시각장애인 보행자 위험 감지 기법</h3>
+            <p class="paper-desc">YOLOv8, U-Net, MiDaS를 통합한 실시간 보행자 위험 감지 시스템을 설계하고, 횡단보도 및 주변 장애물을 인식하는 알고리즘 성능을 검증한 연구.</p>
+            <a class="link-arrow" href="https://doi.org/10.17661/jkiiect.2024.17.6.451" target="_blank" rel="noopener">논문 보기 <span class="arr" aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tech marquee -->
+    <section class="sec sec-soft">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">기술</span>
+            <h2 class="h-sec">프로젝트와 연구에서 쓴 기술</h2>
+          </div>
+          <a class="link-arrow reveal" href="skills.html">기술 스택 보기 <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="marquee" aria-label="사용 기술">
+        <div class="marquee-track">
+          <span>Python</span><span>PyTorch</span><span>XGBoost</span><span>Autoencoder</span><span>YOLOv8</span><span>U-Net</span><span>OpenCV</span><span>pandas</span><span>CUDA / GPU</span>
+          <span aria-hidden="true">Python</span><span aria-hidden="true">PyTorch</span><span aria-hidden="true">XGBoost</span><span aria-hidden="true">Autoencoder</span><span aria-hidden="true">YOLOv8</span><span aria-hidden="true">U-Net</span><span aria-hidden="true">OpenCV</span><span aria-hidden="true">pandas</span><span aria-hidden="true">CUDA / GPU</span>
+        </div>
+      </div>
+      <div class="marquee rev" aria-label="사용 기술">
+        <div class="marquee-track">
+          <span>Docker</span><span>AWS EC2</span><span>MySQL</span><span>Spring Boot</span><span>React</span><span>React Native</span><span>Node.js</span><span>C</span><span>Git / GitHub</span>
+          <span aria-hidden="true">Docker</span><span aria-hidden="true">AWS EC2</span><span aria-hidden="true">MySQL</span><span aria-hidden="true">Spring Boot</span><span aria-hidden="true">React</span><span aria-hidden="true">React Native</span><span aria-hidden="true">Node.js</span><span aria-hidden="true">C</span><span aria-hidden="true">Git / GitHub</span>
         </div>
       </div>
     </section>
 
-    <!-- =========================
-         Defense industry training
-    ========================= -->
-    <section class="section section-dark on-dark">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">04 — Defense Industry Training</span>
-            <h2 class="section-title">방위산업 실무 교육</h2>
+    <!-- Defense training -->
+    <section class="sec sec-dark">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">방위산업 실무 교육</span>
+            <h2 class="h-sec">무기체계 · 전자전 · 신뢰성 분석<br>팀 프로젝트 3건</h2>
           </div>
-          <a class="btn btn-ghost-dark" href="achievements.html#education">교육 이력 보기 <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-white reveal" href="achievements.html#education">교육 이력 보기 <span class="arr" aria-hidden="true">→</span></a>
         </div>
-
-        <!-- 교육기관 · 과정명 · 기간은 기존 사이트 기재 내용 기준 (수료증 대조 필요) -->
+        <!-- 교육기관 · 과정명 · 기간 · 주관은 기존 사이트 기재 내용 기준 (수료증 대조 필요) -->
         <div class="course reveal">
-          <h3 class="course-title">[방산] 방위산업실무 : 핵심기술 이해 및 신뢰도확보 설계 과정</h3>
-          <p class="course-meta"><span class="role">수료</span><span>렛유인에듀 · K-Digital Credit</span><span>2026.06 – 2026.07</span><span>고용노동부 주관</span></p>
+          <h3>[방산] 방위산업실무 : 핵심기술 이해 및 신뢰도확보 설계 과정</h3>
+          <div class="course-meta"><span class="chip chip-blue">수료</span><span class="chip">렛유인에듀 · K-Digital Credit</span><span class="chip">2026.06 – 2026.07</span><span class="chip">고용노동부 주관</span></div>
         </div>
-
-        <div class="training-grid">
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 1</p>
-            <h3 class="training-title">무기체계 기획 프로젝트</h3>
-            <p class="training-desc">북한 장사정포·드론 복합공격 위협을 분석하고, 레이저 기반 통합방공체계(LADS)를 기획. 운용개념 설계 및 작전요구성능(ROC) 도출.</p>
-          </article>
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 2</p>
-            <h3 class="training-title">전자전 재머 사양 설계</h3>
-            <p class="training-desc">적 AESA 레이다 제원을 분석해 대응 재머 사양 설계. 레이다 방정식 기반 J/S ratio 계산 및 재밍가능거리 검증.</p>
-          </article>
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 3</p>
-            <h3 class="training-title">KF-21 신뢰성 분석</h3>
-            <p class="training-desc">정비일지 데이터 정제 후 MTBF·MTTR·가용도(Ao) 산출. 작전요구치 충족 여부 평가 및 정비체계 개선안 도출.</p>
-          </article>
+        <div class="tp-grid">
+          <article class="tp reveal"><p class="tp-k">팀 프로젝트 1</p><h4>무기체계 기획 프로젝트</h4><p>북한 장사정포·드론 복합공격 위협을 분석하고, 레이저 기반 통합방공체계(LADS)를 기획. 운용개념 설계 및 작전요구성능(ROC) 도출.</p></article>
+          <article class="tp reveal" style="--d:1"><p class="tp-k">팀 프로젝트 2</p><h4>전자전 재머 사양 설계</h4><p>적 AESA 레이다 제원을 분석해 대응 재머 사양 설계. 레이다 방정식 기반 J/S ratio 계산 및 재밍가능거리 검증.</p></article>
+          <article class="tp reveal" style="--d:2"><p class="tp-k">팀 프로젝트 3</p><h4>KF-21 신뢰성 분석</h4><p>정비일지 데이터 정제 후 MTBF·MTTR·가용도(Ao) 산출. 작전요구치 충족 여부 평가 및 정비체계 개선안 도출.</p></article>
         </div>
       </div>
     </section>
 
-    <!-- =========================
-         Contact CTA
-    ========================= -->
-    <section class="section">
-      <div class="container">
-        <div class="cta reveal">
-          <div>
-            <span class="eyebrow">05 — Contact</span>
-            <p class="cta-title">프로젝트 코드와 연구 결과물은<br>GitHub에서 확인하실 수 있습니다.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 ↗</a>
-            <a class="btn btn-outline" href="contact.html">Contact <span class="arrow" aria-hidden="true">→</span></a>
+    <!-- CTA -->
+    <section class="sec">
+      <div class="wrap">
+        <div class="cta-band reveal-scale">
+          <h2 class="h-sec">코드와 연구 결과물은<br>GitHub에서 볼 수 있습니다</h2>
+          <p>프로젝트별 저장소와 논문 링크를 정리해 두었습니다.</p>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="btn btn-on-dark" href="contact.html">연락하기</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- =========================
-       Footer (공통)
-  ========================= -->
-  <footer class="site-footer on-dark">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap">
       <div class="footer-top">
-        <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-          </svg>
-          <span class="brand-text">
-            <span class="brand-name">PARK JINSEONG</span>
-            <span class="brand-sub">SW · AI DEVELOPER</span>
-          </span>
-        </a>
-        <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+          <p>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생 · 신입 SW · AI 개발자</p>
+        </div>
+        <div><h4>소개</h4><ul><li><a href="about.html">프로필</a></li><li><a href="about.html#experience">주요 경험</a></li><li><a href="about.html#lab">연구실</a></li></ul></div>
+        <div><h4>작업</h4><ul><li><a href="projects.html">프로젝트</a></li><li><a href="research.html">연구 성과</a></li><li><a href="skills.html">기술</a></li></ul></div>
+        <div><h4>이력 · 연락</h4><ul><li><a href="achievements.html">수상 · 자격 · 교육</a></li><li><a href="contact.html">연락하기</a></li><li><a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
-        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
-      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Park JinSeong</span><span>github.com/park-jin-seong1005</span></div>
     </div>
   </footer>
 

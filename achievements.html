@@ -3,247 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Achievements | Park JinSeong</title>
-  <meta name="description" content="박진성의 수상 내역, 공모전 참가, 자격증, 교육 이력" />
+  <title>이력 | 박진성 포트폴리오</title>
+  <meta name="description" content="수상 내역, 공모전 참가, 자격증, 방위산업 실무 교육 이력" />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="has-local-nav">
+<body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">PARK JINSEONG</span>
-          <span class="brand-sub">SW · AI DEVELOPER</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="주 메뉴">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html" aria-current="page">Achievements</a></li>
-        </ul>
-        <a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+  <header class="gnb" id="gnb">
+    <div class="wrap gnb-in">
+      <a class="logo" href="index.html" aria-label="박진성 포트폴리오 홈"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+      <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="research.html">연구</a>
+        <a href="skills.html">기술</a>
+        <a href="achievements.html" aria-current="page">이력</a>
+        <a class="m-only" href="contact.html">연락하기</a>
       </nav>
+      <a class="btn btn-primary btn-sm gnb-cta" href="contact.html">연락하기</a>
+      <button class="gnb-toggle" id="gnbToggle" type="button" aria-expanded="false" aria-controls="gnbNav" aria-label="메뉴 열기"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-hero on-dark">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><span aria-current="page">Achievements</span></li>
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+      <div class="wrap">
+        <ol class="crumb reveal"><li><a href="index.html">홈</a></li><li><span aria-current="page">이력</span></li></ol>
+        <h1 class="display reveal" style="--d:1">수상 · 자격 · <span class="grad-text">교육</span></h1>
+        <p class="lead reveal" style="--d:2">수상 내역과 공모전 참가 이력, 보유 자격증, 방위산업 실무 교육 이력입니다.</p>
+        <ul class="page-stats reveal" style="--d:3">
+          <li><b>2</b>건 수상</li>
+          <li><b>5</b>개 자격증</li>
+          <li><b>1</b>과정 교육 수료</li>
+          <li><b>3</b>건 교육 팀 프로젝트</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 수상 -->
+    <section class="sec" id="awards">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">수상 내역</span>
+            <h2 class="h-sec">수상</h2>
+          </div>
+        </div>
+        <!-- 확인 필요: 세종 경진대회 장려상이 '자율주행 위험감지 시스템' 프로젝트의 결과인지 -->
+        <div class="awards">
+          <div class="award reveal">
+            <span class="award-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14.5L7 22l5-3 5 3-1.5-7.5"/></svg></span>
+            <div><span class="chip">2024 · 학술대회</span><h3>2024년도 한국정보전자통신기술학회 우수논문상</h3></div>
+          </div>
+          <div class="award reveal" style="--d:1">
+            <span class="award-ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4z"/><path d="M17 5h3v2a3 3 0 01-3 3M7 5H4v2a3 3 0 003 3"/></svg></span>
+            <div><span class="chip">2024 · 경진대회</span><h3>2024 세종자율주행 시범운행지구 데이터 활용 AI 경진대회 3등 장려상</h3></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 공모전 -->
+    <section class="sec sec-soft" id="contests">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">공모전 · SW 개발 · AI</span>
+            <h2 class="h-sec">공모전 참가</h2>
+          </div>
+          <a class="link-arrow reveal" href="projects.html">관련 프로젝트 <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+        <ol class="rows reveal">
+          <li><span class="yr">2023</span><span class="t">창원시 누비자 자전거 재배치 알고리즘</span><span class="r">특허 출원</span></li>
+          <li><span class="yr">2024</span><span class="t">SW중심대학 디지털 경진대회_SW와 생성 AI의 만남 : AI 부문(딥페이크 검출)</span><span class="r">전국 13등</span></li>
+          <li><span class="yr">2024</span><span class="t">세종AI 경진대회</span><span class="r">자율주행 위험감지 시스템 개발</span></li>
+          <li><span class="yr">2024</span><span class="t">영주시 산사태 발생 확률 예측 프로젝트</span><span class="r">—</span></li>
+          <li><span class="yr">2024</span><span class="t">국방부 군대앱(식단, PX 정보 제공) 개발</span><span class="r">—</span></li>
+          <li><span class="yr">2024</span><span class="t">빅데이터 해커톤</span><span class="r">서울시 재비산먼지 AI 예측 아이디어 제안</span></li>
+          <li><span class="yr">2024</span><span class="t">창업아이디어 경진대회</span><span class="r">킥보드 위험감지 시스템</span></li>
+          <li><span class="yr">2024</span><span class="t">경상남도 빅데이터 공모전</span><span class="r">경상남도 관광지 데이터 분석</span></li>
+          <li><span class="yr">2025</span><span class="t">SW중심대학 디지털 경진대회 : SW부문</span><span class="r">Go-Around 모델 개발 및 제주공항 날씨 데이터 분석</span></li>
         </ol>
-        <span class="eyebrow">Achievements</span>
-        <h1 class="page-title">수상 · 자격 · 교육</h1>
-        <p class="page-desc">수상 내역과 공모전 참가 이력, 보유 자격증, 방위산업 실무 교육 이력입니다.</p>
-        <ul class="page-stats">
-          <li><p class="label">Awards</p><p class="v">2<small>건</small></p></li>
-          <li><p class="label">Certifications</p><p class="v">5<small>개</small></p></li>
-          <li><p class="label">Training</p><p class="v">1<small>과정</small></p></li>
-          <li><p class="label">Team Projects</p><p class="v">3<small>건</small></p></li>
-        </ul>
-      </div>
-    </section>
-
-    <nav class="local-nav" aria-label="페이지 내 메뉴">
-      <div class="container">
-        <ul>
-          <li><a href="#awards">수상 내역</a></li>
-          <li><a href="#contests">공모전 참가</a></li>
-          <li><a href="#licenses">자격증</a></li>
-          <li><a href="#education">교육 이력</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- 수상 내역 -->
-    <section class="section" id="awards">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">01 — Awards</span>
-            <h2 class="section-title">수상 내역</h2>
-          </div>
-        </div>
-
-        <ul class="award-list">
-          <li class="award reveal">
-            <span class="award-year">2024</span>
-            <div>
-              <h3>2024년도 한국정보전자통신기술학회 우수논문상</h3>
-              <p><span class="badge">학술대회</span></p>
-            </div>
-          </li>
-          <li class="award reveal">
-            <span class="award-year">2024</span>
-            <div>
-              <h3>2024 세종자율주행 시범운행지구 데이터 활용 AI 경진대회 3등 장려상</h3>
-              <p><span class="badge">경진대회</span></p>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 공모전 참가 (원본 목록 그대로) -->
-    <section class="section section-alt" id="contests">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">02 — Competitions</span>
-            <h2 class="section-title">공모전 참가</h2>
-            <p class="section-desc">공모전 · SW 개발 · AI</p>
-          </div>
-          <a class="text-link" href="projects.html">관련 프로젝트 <span aria-hidden="true">→</span></a>
-        </div>
-
-        <table class="data-table reveal">
-          <thead>
-            <tr><th scope="col">Year</th><th scope="col">Competition</th><th scope="col">Result / Topic</th></tr>
-          </thead>
-          <tbody>
-            <tr><td class="col-year">2023</td><td class="strong">창원시 누비자 자전거 재배치 알고리즘</td><td>특허 출원</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">SW중심대학 디지털 경진대회_SW와 생성 AI의 만남 : AI 부문(딥페이크 검출)</td><td>전국 13등</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">세종AI 경진대회</td><td>자율주행 위험감지 시스템 개발</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">영주시 산사태 발생 확률 예측 프로젝트</td><td>—</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">국방부 군대앱(식단, PX 정보 제공) 개발</td><td>—</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">빅데이터 해커톤</td><td>서울시 재비산먼지 AI 예측 아이디어 제안</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">창업아이디어 경진대회</td><td>킥보드 위험감지 시스템</td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">경상남도 빅데이터 공모전</td><td>경상남도 관광지 데이터 분석</td></tr>
-            <tr><td class="col-year">2025</td><td class="strong">SW중심대학 디지털 경진대회 : SW부문</td><td>Go-Around 모델 개발 및 제주공항 날씨 데이터 분석</td></tr>
-          </tbody>
-        </table>
       </div>
     </section>
 
     <!-- 자격증 -->
-    <section class="section" id="licenses">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">03 — Certifications &amp; Licenses</span>
-            <h2 class="section-title">자격증</h2>
+    <section class="sec" id="licenses">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">자격증</span>
+            <h2 class="h-sec">보유 자격</h2>
           </div>
         </div>
-
-        <div class="card-grid">
-          <article class="info-card reveal">
-            <div class="info-card-top"><span class="badge">국가기술자격</span></div>
-            <h3>정보처리기사</h3>
-            <p class="en">Information Processing Engineer</p>
-          </article>
-          <article class="info-card reveal">
-            <div class="info-card-top"><span class="badge">데이터베이스</span></div>
-            <h3>SQLD</h3>
-            <p class="en">SQL Developer</p>
-          </article>
-          <article class="info-card reveal">
-            <div class="info-card-top"><span class="badge">시스템 관리</span></div>
-            <h3>리눅스마스터 2급</h3>
-            <p class="en">Linux Master Level 2</p>
-          </article>
-          <article class="info-card reveal">
-            <div class="info-card-top"><span class="badge">사무자동화</span></div>
-            <h3>컴퓨터활용능력 1급</h3>
-            <p class="en">Computer Specialist Level 1</p>
-          </article>
-          <article class="info-card reveal">
-            <div class="info-card-top"><span class="badge">어학능력</span></div>
-            <h3>TOEIC Speaking IH</h3>
-            <p class="en">Intermediate High Level</p>
-          </article>
+        <div class="certs">
+          <article class="cert reveal"><span class="chip chip-blue">국가기술자격</span><h3>정보처리기사</h3><p>Information Processing Engineer</p></article>
+          <article class="cert reveal" style="--d:1"><span class="chip">데이터베이스</span><h3>SQLD</h3><p>SQL Developer</p></article>
+          <article class="cert reveal" style="--d:2"><span class="chip">시스템 관리</span><h3>리눅스마스터 2급</h3><p>Linux Master Level 2</p></article>
+          <article class="cert reveal" style="--d:3"><span class="chip">사무자동화</span><h3>컴퓨터활용능력 1급</h3><p>Computer Specialist Level 1</p></article>
+          <article class="cert reveal" style="--d:4"><span class="chip">어학능력</span><h3>TOEIC Speaking IH</h3><p>Intermediate High Level</p></article>
         </div>
       </div>
     </section>
 
-    <!-- 교육 이력 -->
-    <section class="section section-dark on-dark" id="education">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">04 — Education &amp; Training</span>
-            <h2 class="section-title">교육 이력</h2>
+    <!-- 교육 -->
+    <section class="sec sec-dark" id="education">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">교육 이력</span>
+            <h2 class="h-sec">방위산업 실무 교육</h2>
           </div>
         </div>
-
-        <!-- 교육기관 · 과정명 · 기간은 기존 사이트 기재 내용 기준 (수료증 대조 필요) -->
+        <!-- 교육기관 · 과정명 · 기간 · 주관은 기존 사이트 기재 내용 기준 (수료증 대조 필요) -->
         <div class="course reveal">
-          <h3 class="course-title">[방산] 방위산업실무 : 핵심기술 이해 및 신뢰도확보 설계 과정</h3>
-          <p class="course-meta"><span class="role">수료</span><span>렛유인에듀 · K-Digital Credit</span><span>2026.06 – 2026.07</span><span>고용노동부 주관</span></p>
+          <h3>[방산] 방위산업실무 : 핵심기술 이해 및 신뢰도확보 설계 과정</h3>
+          <div class="course-meta"><span class="chip chip-blue">수료</span><span class="chip">렛유인에듀 · K-Digital Credit</span><span class="chip">2026.06 – 2026.07</span><span class="chip">고용노동부 주관</span></div>
         </div>
-
-        <div class="training-grid">
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 1</p>
-            <h3 class="training-title">무기체계 기획 프로젝트</h3>
-            <p class="training-desc">북한 장사정포·드론 복합공격 위협을 분석하고, 레이저 기반 통합방공체계(LADS)를 기획. 운용개념 설계 및 작전요구성능(ROC) 도출.</p>
-          </article>
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 2</p>
-            <h3 class="training-title">전자전 재머 사양 설계</h3>
-            <p class="training-desc">적 AESA 레이다 제원을 분석해 대응 재머 사양 설계. 레이다 방정식 기반 J/S ratio 계산 및 재밍가능거리 검증.</p>
-          </article>
-          <article class="training-item reveal">
-            <p class="training-kind">팀 프로젝트 3</p>
-            <h3 class="training-title">KF-21 신뢰성 분석</h3>
-            <p class="training-desc">정비일지 데이터 정제 후 MTBF·MTTR·가용도(Ao) 산출. 작전요구치 충족 여부 평가 및 정비체계 개선안 도출.</p>
-          </article>
+        <div class="tp-grid">
+          <article class="tp reveal"><p class="tp-k">팀 프로젝트 1</p><h4>무기체계 기획 프로젝트</h4><p>북한 장사정포·드론 복합공격 위협을 분석하고, 레이저 기반 통합방공체계(LADS)를 기획. 운용개념 설계 및 작전요구성능(ROC) 도출.</p></article>
+          <article class="tp reveal" style="--d:1"><p class="tp-k">팀 프로젝트 2</p><h4>전자전 재머 사양 설계</h4><p>적 AESA 레이다 제원을 분석해 대응 재머 사양 설계. 레이다 방정식 기반 J/S ratio 계산 및 재밍가능거리 검증.</p></article>
+          <article class="tp reveal" style="--d:2"><p class="tp-k">팀 프로젝트 3</p><h4>KF-21 신뢰성 분석</h4><p>정비일지 데이터 정제 후 MTBF·MTTR·가용도(Ao) 산출. 작전요구치 충족 여부 평가 및 정비체계 개선안 도출.</p></article>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer on-dark">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap">
       <div class="footer-top">
-        <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-          </svg>
-          <span class="brand-text">
-            <span class="brand-name">PARK JINSEONG</span>
-            <span class="brand-sub">SW · AI DEVELOPER</span>
-          </span>
-        </a>
-        <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+          <p>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생 · 신입 SW · AI 개발자</p>
+        </div>
+        <div><h4>소개</h4><ul><li><a href="about.html">프로필</a></li><li><a href="about.html#experience">주요 경험</a></li><li><a href="about.html#lab">연구실</a></li></ul></div>
+        <div><h4>작업</h4><ul><li><a href="projects.html">프로젝트</a></li><li><a href="research.html">연구 성과</a></li><li><a href="skills.html">기술</a></li></ul></div>
+        <div><h4>이력 · 연락</h4><ul><li><a href="achievements.html">수상 · 자격 · 교육</a></li><li><a href="contact.html">연락하기</a></li><li><a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
-        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
-      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Park JinSeong</span><span>github.com/park-jin-seong1005</span></div>
     </div>
   </footer>
 

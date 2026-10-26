@@ -3,240 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Skills | Park JinSeong</title>
-  <meta name="description" content="박진성의 기술 스택, 숙련도, 프로젝트별 활용 기술" />
+  <title>기술 | 박진성 포트폴리오</title>
+  <meta name="description" content="기술 스택, 숙련도 자기 평가, 프로젝트별 사용 기술" />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body class="has-local-nav">
+<body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">PARK JINSEONG</span>
-          <span class="brand-sub">SW · AI DEVELOPER</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="주 메뉴">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html" aria-current="page">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-        <a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+  <header class="gnb" id="gnb">
+    <div class="wrap gnb-in">
+      <a class="logo" href="index.html" aria-label="박진성 포트폴리오 홈"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+      <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="research.html">연구</a>
+        <a href="skills.html" aria-current="page">기술</a>
+        <a href="achievements.html">이력</a>
+        <a class="m-only" href="contact.html">연락하기</a>
       </nav>
+      <a class="btn btn-primary btn-sm gnb-cta" href="contact.html">연락하기</a>
+      <button class="gnb-toggle" id="gnbToggle" type="button" aria-expanded="false" aria-controls="gnbNav" aria-label="메뉴 열기"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-hero on-dark">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><span aria-current="page">Skills</span></li>
-        </ol>
-        <span class="eyebrow">Skills</span>
-        <h1 class="page-title">기술 스택</h1>
-        <p class="page-desc">AI 모델 개발, 데이터 처리, 백엔드 · 프론트엔드, 배포 환경까지 프로젝트와 연구에서 사용해 온 기술입니다.</p>
-        <ul class="page-stats">
-          <li><p class="label">Tech Stack</p><p class="v">12<small>개</small></p></li>
-          <li><p class="label">Categories</p><p class="v">4<small>개</small></p></li>
-          <li><p class="label">Proficiency</p><p class="v">4<small>항목</small></p></li>
-          <li><p class="label">Projects</p><p class="v">10<small>건</small></p></li>
-        </ul>
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+      <div class="wrap">
+        <ol class="crumb reveal"><li><a href="index.html">홈</a></li><li><span aria-current="page">기술</span></li></ol>
+        <h1 class="display reveal" style="--d:1">프로젝트와 연구에서<br><span class="grad-text">사용해 온 기술</span></h1>
+        <p class="lead reveal" style="--d:2">AI 모델 개발, 데이터 처리, 백엔드 · 프론트엔드, 배포 환경까지 프로젝트와 연구에서 사용해 온 기술입니다.</p>
       </div>
     </section>
-
-    <nav class="local-nav" aria-label="페이지 내 메뉴">
-      <div class="container">
-        <ul>
-          <li><a href="#stack">기술 스택</a></li>
-          <li><a href="#proficiency">숙련도</a></li>
-          <li><a href="#usage">프로젝트 활용 기술</a></li>
-        </ul>
-      </div>
-    </nav>
 
     <!-- 기술 스택 -->
-    <section class="section" id="stack">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">01 — Tech Stack</span>
-            <h2 class="section-title">기술 스택</h2>
+    <section class="sec" id="stack">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">기술 스택</span>
+            <h2 class="h-sec">4개 분야 12개 기술</h2>
           </div>
         </div>
-
-        <div class="skill-groups reveal">
-          <div class="skill-group">
-            <span class="label">01 — Languages</span>
-            <h3>언어 / 프레임워크</h3>
-            <ul class="chip-list"><li>Python</li><li>Spring Boot</li><li>React</li><li>C</li></ul>
-          </div>
-          <div class="skill-group">
-            <span class="label">02 — Database</span>
-            <h3>데이터 / DB</h3>
-            <ul class="chip-list"><li>MySQL</li></ul>
-          </div>
-          <div class="skill-group">
-            <span class="label">03 — AI · Data</span>
-            <h3>AI · 데이터 처리</h3>
-            <ul class="chip-list"><li>PyTorch</li><li>pandas</li><li>OpenCV</li><li>CUDA / GPU</li></ul>
-          </div>
-          <div class="skill-group">
-            <span class="label">04 — DevOps</span>
-            <h3>DevOps / 배포</h3>
-            <ul class="chip-list"><li>Docker</li><li>AWS EC2</li><li>Git / GitHub</li></ul>
-          </div>
+        <div class="grid-2 stack-cards">
+          <article class="card reveal"><div class="card-body"><span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></span><h3 class="card-title">언어 / 프레임워크</h3><div class="chips"><span class="chip">Python</span><span class="chip">Spring Boot</span><span class="chip">React</span><span class="chip">C</span></div></div></article>
+          <article class="card reveal" style="--d:1"><div class="card-body"><span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><h3 class="card-title">데이터 / DB</h3><div class="chips"><span class="chip">MySQL</span></div></div></article>
+          <article class="card reveal"><div class="card-body"><span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></span><h3 class="card-title">AI · 데이터 처리</h3><div class="chips"><span class="chip">PyTorch</span><span class="chip">pandas</span><span class="chip">OpenCV</span><span class="chip">CUDA / GPU</span></div></div></article>
+          <article class="card reveal" style="--d:1"><div class="card-body"><span class="b-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8"/></svg></span><h3 class="card-title">DevOps / 배포</h3><div class="chips"><span class="chip">Docker</span><span class="chip">AWS EC2</span><span class="chip">Git / GitHub</span></div></div></article>
         </div>
       </div>
     </section>
 
-    <!-- 숙련도: 기존 수치를 20칸 눈금으로 표시 (1칸 = 5%) -->
-    <section class="section section-alt" id="proficiency">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">02 — Proficiency</span>
-            <h2 class="section-title">숙련도</h2>
+    <!-- 숙련도 -->
+    <section class="sec sec-soft" id="proficiency">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">숙련도 · 본인 평가</span>
+            <h2 class="h-sec">분야별 숙련도</h2>
           </div>
         </div>
-
-        <div class="reveal">
-          <ul class="gauge-list">
-            <li class="gauge-row">
-              <span class="gauge-name">Python / PyTorch</span>
-              <div class="gauge" role="img" aria-label="75 / 100">
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i></i><i></i><i></i><i></i><i></i>
-              </div>
-              <span class="gauge-value">75 <small>/ 100</small></span>
-            </li>
-            <li class="gauge-row">
-              <span class="gauge-name">DB 설계 / SQL</span>
-              <div class="gauge" role="img" aria-label="80 / 100">
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i></i><i></i><i></i><i></i>
-              </div>
-              <span class="gauge-value">80 <small>/ 100</small></span>
-            </li>
-            <li class="gauge-row">
-              <span class="gauge-name">React / Frontend</span>
-              <div class="gauge" role="img" aria-label="70 / 100">
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
-                <i></i><i></i><i></i><i></i><i></i>
-              </div>
-              <span class="gauge-value">70 <small>/ 100</small></span>
-            </li>
-            <li class="gauge-row">
-              <span class="gauge-name">Docker / AWS</span>
-              <div class="gauge" role="img" aria-label="65 / 100">
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
-                <i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i>
-                <i></i><i></i><i></i><i></i><i></i>
-              </div>
-              <span class="gauge-value">65 <small>/ 100</small></span>
-            </li>
-          </ul>
-          <div class="gauge-scale label" aria-hidden="true">
-            <span></span>
-            <div><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div>
-            <span></span>
-          </div>
-          <p class="note">기존 포트폴리오에 표기된 숙련도 수치를 그대로 20칸 눈금으로 나타냈습니다. (1칸 = 5)</p>
+        <div class="bars reveal" role="list">
+          <div role="listitem"><div class="bar-top"><span>DB 설계 / SQL</span><b>80</b></div><div class="bar" role="img" aria-label="80 / 100"><i style="--v:80%"></i></div></div>
+          <div role="listitem"><div class="bar-top"><span>Python / PyTorch</span><b>75</b></div><div class="bar" role="img" aria-label="75 / 100"><i style="--v:75%"></i></div></div>
+          <div role="listitem"><div class="bar-top"><span>React / Frontend</span><b>70</b></div><div class="bar" role="img" aria-label="70 / 100"><i style="--v:70%"></i></div></div>
+          <div role="listitem"><div class="bar-top"><span>Docker / AWS</span><b>65</b></div><div class="bar" role="img" aria-label="65 / 100"><i style="--v:65%"></i></div></div>
         </div>
+        <p class="note reveal">기존 포트폴리오에 표기한 본인 평가 수치입니다 (100점 기준).</p>
       </div>
     </section>
 
     <!-- 프로젝트 활용 기술 -->
-    <section class="section" id="usage">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <span class="eyebrow">03 — Applied Stack</span>
-            <h2 class="section-title">프로젝트 활용 기술</h2>
-            <p class="section-desc">각 프로젝트에서 사용한 기술입니다.</p>
+    <section class="sec" id="usage">
+      <div class="wrap">
+        <div class="sec-head">
+          <div class="reveal">
+            <span class="kicker">프로젝트 활용 기술</span>
+            <h2 class="h-sec">프로젝트별 사용 기술</h2>
           </div>
-          <a class="text-link" href="projects.html">전체 프로젝트 <span aria-hidden="true">→</span></a>
+          <a class="link-arrow reveal" href="projects.html">전체 프로젝트 <span class="arr" aria-hidden="true">→</span></a>
         </div>
-
-        <table class="data-table reveal">
-          <thead>
-            <tr><th scope="col">Year</th><th scope="col">Project</th><th scope="col">Stack</th></tr>
-          </thead>
-          <tbody>
-            <tr><td class="col-year">2025</td><td class="strong"><a href="projects/go-around.html">Go-Around 모델 개발 및 제주공항 날씨 분석</a></td><td><ul class="tags"><li>Python</li><li>PyTorch</li><li>Autoencoder</li><li>XGBoost</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong"><a href="projects/deepfake.html">SW-딥페이크 음성 검출</a></td><td><ul class="tags"><li>Python</li><li>PyTorch</li><li>GPU</li><li>Tssdnet</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong"><a href="projects/sejong-ai.html">자율주행 위험감지 시스템</a> <span class="cell-sub">2024 세종AI 경진대회</span></td><td><ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>U-Net</li></ul></td></tr>
-            <tr><td class="col-year">2023</td><td class="strong">창원시 누비자 자전거 재배치 알고리즘 <span class="cell-sub">특허 출원</span></td><td><ul class="tags"><li>Python</li><li>Optimization</li><li>Algorithm</li></ul></td></tr>
-            <tr><td class="col-year">—</td><td class="strong">제조기업 사무자동화를 위한 RPA 소프트웨어 <span class="cell-sub">저작권 등록</span></td><td><ul class="tags"><li>Python</li><li>RPA</li><li>Excel Automation</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">영주시 산사태 확률 분석</td><td><ul class="tags"><li>Python</li><li>XGBoost</li><li>pandas</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">국방부 군대앱</td><td><ul class="tags"><li>React Native</li><li>Node.js</li><li>MySQL</li><li>QR Code</li><li>Open API</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">서울시 재비산먼지 AI 예측 아이디어 제안</td><td><ul class="tags"><li>Python</li><li>pandas</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">킥보드 위험감지 시스템</td><td><ul class="tags"><li>Python</li><li>Idea</li><li>Algorithm</li></ul></td></tr>
-            <tr><td class="col-year">2024</td><td class="strong">경상남도 관광지 분석</td><td><ul class="tags"><li>Python</li><li>pandas</li><li>Web Crawling</li><li>Clustering</li></ul></td></tr>
-          </tbody>
-        </table>
+        <ol class="rows reveal">
+          <li><span class="yr">2025</span><span><a class="t" href="projects/go-around.html">Go-Around 모델 개발 및 제주공항 날씨 분석</a></span><span class="r">Python · PyTorch · Autoencoder · XGBoost</span></li>
+          <li><span class="yr">2024</span><span><a class="t" href="projects/deepfake.html">SW-딥페이크 음성 검출</a></span><span class="r">Python · PyTorch · GPU · Tssdnet</span></li>
+          <li><span class="yr">2024</span><span><a class="t" href="projects/sejong-ai.html">자율주행 위험감지 시스템</a><span class="s">2024 세종AI 경진대회</span></span><span class="r">Python · PyTorch · OpenCV · YOLOv8 · U-Net</span></li>
+          <li><span class="yr">2023</span><span><span class="t">창원시 누비자 자전거 재배치 알고리즘</span><span class="s">특허 출원</span></span><span class="r">Python · Optimization · Algorithm</span></li>
+          <li><span class="yr">—</span><span><span class="t">제조기업 사무자동화를 위한 RPA 소프트웨어</span><span class="s">저작권 등록</span></span><span class="r">Python · RPA · Excel Automation</span></li>
+          <li><span class="yr">2024</span><span class="t">영주시 산사태 확률 분석</span><span class="r">Python · XGBoost · pandas</span></li>
+          <li><span class="yr">2024</span><span class="t">국방부 군대앱</span><span class="r">React Native · Node.js · MySQL · QR Code · Open API</span></li>
+          <li><span class="yr">2024</span><span class="t">서울시 재비산먼지 AI 예측 아이디어 제안</span><span class="r">Python · pandas</span></li>
+          <li><span class="yr">2024</span><span class="t">킥보드 위험감지 시스템</span><span class="r">Python · Idea · Algorithm</span></li>
+          <li><span class="yr">2024</span><span class="t">경상남도 관광지 분석</span><span class="r">Python · pandas · Web Crawling · Clustering</span></li>
+        </ol>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer on-dark">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap">
       <div class="footer-top">
-        <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-          </svg>
-          <span class="brand-text">
-            <span class="brand-name">PARK JINSEONG</span>
-            <span class="brand-sub">SW · AI DEVELOPER</span>
-          </span>
-        </a>
-        <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+          <p>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생 · 신입 SW · AI 개발자</p>
+        </div>
+        <div><h4>소개</h4><ul><li><a href="about.html">프로필</a></li><li><a href="about.html#experience">주요 경험</a></li><li><a href="about.html#lab">연구실</a></li></ul></div>
+        <div><h4>작업</h4><ul><li><a href="projects.html">프로젝트</a></li><li><a href="research.html">연구 성과</a></li><li><a href="skills.html">기술</a></li></ul></div>
+        <div><h4>이력 · 연락</h4><ul><li><a href="achievements.html">수상 · 자격 · 교육</a></li><li><a href="contact.html">연락하기</a></li><li><a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
-        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
-      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Park JinSeong</span><span>github.com/park-jin-seong1005</span></div>
     </div>
   </footer>
 

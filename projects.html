@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Projects | Park JinSeong</title>
-  <meta name="description" content="박진성의 AI · 데이터 분석 · 앱 개발 프로젝트와 특허 · 저작권" />
+  <title>프로젝트 | 박진성 포트폴리오</title>
+  <meta name="description" content="박진성의 AI · 데이터 분석 · 앱 개발 프로젝트와 특허 · 저작권 10건" />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css" />
@@ -18,60 +15,41 @@
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">PARK JINSEONG</span>
-          <span class="brand-sub">SW · AI DEVELOPER</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="주 메뉴">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html" aria-current="page">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-        <a class="nav-cta" href="contact.html">Contact <span aria-hidden="true">→</span></a>
+  <header class="gnb" id="gnb">
+    <div class="wrap gnb-in">
+      <a class="logo" href="index.html" aria-label="박진성 포트폴리오 홈"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+      <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="projects.html" aria-current="page">프로젝트</a>
+        <a href="research.html">연구</a>
+        <a href="skills.html">기술</a>
+        <a href="achievements.html">이력</a>
+        <a class="m-only" href="contact.html">연락하기</a>
       </nav>
+      <a class="btn btn-primary btn-sm gnb-cta" href="contact.html">연락하기</a>
+      <button class="gnb-toggle" id="gnbToggle" type="button" aria-expanded="false" aria-controls="gnbNav" aria-label="메뉴 열기"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-hero on-dark">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><span aria-current="page">Projects</span></li>
-        </ol>
-        <span class="eyebrow">Projects</span>
-        <h1 class="page-title">프로젝트</h1>
-        <p class="page-desc">AI 모델 개발, 데이터 분석, 앱 개발, 특허 · 저작권까지 공모전과 연구실 활동을 통해 수행한 프로젝트입니다.</p>
-        <ul class="page-stats">
-          <li><p class="label">Total</p><p class="v">10<small>건</small></p></li>
-          <li><p class="label">Team Lead</p><p class="v">3<small>건</small></p></li>
-          <li><p class="label">Period</p><p class="v is-text">2023 – 2025</p></li>
-          <li><p class="label">Detail Pages</p><p class="v">3<small>건</small></p></li>
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+      <div class="wrap">
+        <ol class="crumb reveal"><li><a href="index.html">홈</a></li><li><span aria-current="page">프로젝트</span></li></ol>
+        <h1 class="display reveal" style="--d:1">직접 기획하고<br><span class="grad-text">만든 프로젝트</span></h1>
+        <p class="lead reveal" style="--d:2">AI 모델 개발, 데이터 분석, 앱 개발, 특허 · 저작권까지 공모전과 연구실 활동을 통해 수행한 프로젝트입니다.</p>
+        <ul class="page-stats reveal" style="--d:3">
+          <li><b>10</b>건 프로젝트</li>
+          <li><b>3</b>건 팀장</li>
+          <li><b>3</b>건 상세 페이지</li>
+          <li><b>2023 – 2025</b></li>
         </ul>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="filter-bar">
+    <section class="sec" style="padding-top:clamp(40px,5vw,64px)">
+      <div class="wrap">
+        <div class="filter-bar reveal">
           <div class="filter" data-filter role="group" aria-label="분야별 필터">
             <button type="button" data-value="all" aria-pressed="true">전체</button>
             <button type="button" data-value="ai" aria-pressed="false">AI · ML</button>
@@ -79,255 +57,179 @@
             <button type="button" data-value="app" aria-pressed="false">앱 · 웹</button>
             <button type="button" data-value="ip" aria-pressed="false">특허 · 저작권</button>
           </div>
-          <p class="filter-count" id="filterCount" aria-live="polite"><b>10</b> / 10 PROJECTS</p>
+          <p class="filter-count" id="filterCount" aria-live="polite"><b>10</b>개 프로젝트</p>
         </div>
 
-        <div class="project-grid cols-2">
+        <div class="grid-2">
           <!-- 1. Go-Around -->
-          <article class="project-card reveal" data-category="ai data">
-            <figure class="project-figure">
-              <img src="images/Go_around.png" alt="Go-Around 챗봇 화면: 제주공항 날씨와 Go-Around 확률 표시" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">Go-Around 모델 개발 및 제주공항 날씨 분석</h2>
-              <p class="project-context">2025 SW중심대학 디지털 경진대회 : SW부문</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2025.05 – 2025.07</span><span>AI · Data</span></p>
-              <p class="project-desc">제주공항 날씨 데이터 및 항공 데이터를 기반으로 항공기 Go-Around 상황 예측 모델 개발. PyTorch와 데이터 시각화 활용.</p>
-              <p class="project-result"><span class="k">성과</span>KCI 등재 1저자 논문 게재</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>프로젝트 전체 기획 및 팀 관리</li><li>항공 및 기상 데이터 수집/전처리</li><li>Go-Around 예측 딥러닝 모델 설계 및 학습</li><li>성능 최적화 및 결과 분석</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>Autoencoder</li><li>XGBoost</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/go-around.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Go-around" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <article class="card reveal" id="p-goaround" data-category="ai data">
+            <div class="card-media"><img src="images/Go_around.png" alt="Go-Around 챗봇 화면: 제주공항 날씨와 Go-Around 확률 표시" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Data</span><span class="chip">2025.05 – 2025.07</span></div>
+              <h2 class="card-title"><a class="stretched" href="projects/go-around.html">Go-Around 모델 개발 및 제주공항 날씨 분석</a></h2>
+              <p class="card-ctx">2025 SW중심대학 디지털 경진대회 : SW부문</p>
+              <p class="card-desc">제주공항 날씨 데이터 및 항공 데이터를 기반으로 항공기 Go-Around 상황 예측 모델 개발. PyTorch와 데이터 시각화 활용.</p>
+              <p class="card-result">KCI 등재 1저자 논문 게재</p>
+              <ul class="card-list"><li>프로젝트 전체 기획 및 팀 관리</li><li>항공 및 기상 데이터 수집/전처리</li><li>Go-Around 예측 딥러닝 모델 설계 및 학습</li><li>성능 최적화 및 결과 분석</li></ul>
+              <p class="card-stack">Python · PyTorch · Autoencoder · XGBoost</p>
+              <div class="card-foot"><span class="link-arrow">상세 보기 <span class="arr" aria-hidden="true">→</span></span><a class="gh" href="https://github.com/park-jin-seong1005/Go-around" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
           <!-- 2. SW-딥페이크 음성 검출 -->
-          <article class="project-card reveal" data-category="ai">
-            <figure class="project-figure">
-              <img src="images/SW_deepfake.png" alt="TSSDNet 모델 구조 다이어그램" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">SW-딥페이크 음성 검출</h2>
-              <p class="project-context">2024 SW중심대학 디지털 경진대회_SW와 생성 AI의 만남 : AI 부문(딥페이크 검출)</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2024</span><span>AI · Audio</span></p>
-              <p class="project-desc">딥러닝 기반 음성 딥페이크 검출 프로젝트. PyTorch 및 GPU 환경 사용, 데이터 전처리와 모델 학습 진행.</p>
-              <p class="project-result"><span class="k">성과</span>AI 부문(딥페이크 검출) 전국 13등</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>프로젝트 계획 수립</li><li>전체 데이터 전처리</li><li>딥러닝 모델 설계 및 학습</li><li>성능 평가 및 최적화</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>GPU</li><li>Tssdnet</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/deepfake.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/SW---Deepfake-2024-/tree/master" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <article class="card reveal" style="--d:1" id="p-deepfake" data-category="ai">
+            <div class="card-media"><img src="images/SW_deepfake.png" alt="TSSDNet 모델 구조 다이어그램" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Audio</span><span class="chip">2024</span></div>
+              <h2 class="card-title"><a class="stretched" href="projects/deepfake.html">SW-딥페이크 음성 검출</a></h2>
+              <p class="card-ctx">2024 SW중심대학 디지털 경진대회_SW와 생성 AI의 만남 : AI 부문(딥페이크 검출)</p>
+              <p class="card-desc">딥러닝 기반 음성 딥페이크 검출 프로젝트. PyTorch 및 GPU 환경 사용, 데이터 전처리와 모델 학습 진행.</p>
+              <p class="card-result">AI 부문(딥페이크 검출) 전국 13등</p>
+              <ul class="card-list"><li>프로젝트 계획 수립</li><li>전체 데이터 전처리</li><li>딥러닝 모델 설계 및 학습</li><li>성능 평가 및 최적화</li></ul>
+              <p class="card-stack">Python · PyTorch · GPU · Tssdnet</p>
+              <div class="card-foot"><span class="link-arrow">상세 보기 <span class="arr" aria-hidden="true">→</span></span><a class="gh" href="https://github.com/park-jin-seong1005/SW---Deepfake-2024-/tree/master" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
           <!-- 3. 세종AI 경진대회 -->
-          <article class="project-card reveal" data-category="ai">
-            <figure class="project-figure">
-              <img src="images/SEJONG.png" alt="YOLOv8 객체 탐지 결과: 도로 위 보행자와 킥보드 탐지" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">자율주행 위험감지 시스템</h2>
-              <p class="project-context">2024 세종AI 경진대회</p>
-              <p class="project-meta"><span class="role">팀장</span><span>2024</span><span>AI · Vision</span></p>
-              <p class="project-desc">자율주행 차량 위험 감지 모델 개발, 영상 데이터 기반 객체 탐지 및 위험 상황 예측. PyTorch와 OpenCV 활용.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>프로젝트 기획 및 일정 관리</li><li>YOLOv8 데이터 전처리</li><li>YOLOv8 기반 객체 탐지 모델 개발</li><li>위험 상황 판단 알고리즘 설계</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>U-Net</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="primary" href="projects/sejong-ai.html">상세 보기 <span aria-hidden="true">→</span></a>
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Sejong-AI" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <article class="card reveal" id="p-sejong" data-category="ai">
+            <div class="card-media"><img src="images/SEJONG.png" alt="YOLOv8 객체 탐지 결과: 도로 위 보행자와 킥보드 탐지" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip chip-blue">팀장</span><span class="chip">AI · Vision</span><span class="chip">2024</span></div>
+              <h2 class="card-title"><a class="stretched" href="projects/sejong-ai.html">자율주행 위험감지 시스템</a></h2>
+              <p class="card-ctx">2024 세종AI 경진대회</p>
+              <p class="card-desc">자율주행 차량 위험 감지 모델 개발, 영상 데이터 기반 객체 탐지 및 위험 상황 예측. PyTorch와 OpenCV 활용.</p>
+              <ul class="card-list"><li>프로젝트 기획 및 일정 관리</li><li>YOLOv8 데이터 전처리</li><li>YOLOv8 기반 객체 탐지 모델 개발</li><li>위험 상황 판단 알고리즘 설계</li></ul>
+              <p class="card-stack">Python · PyTorch · OpenCV · YOLOv8 · U-Net</p>
+              <div class="card-foot"><span class="link-arrow">상세 보기 <span class="arr" aria-hidden="true">→</span></span><a class="gh" href="https://github.com/park-jin-seong1005/Sejong-AI" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <!-- 4. 창원시 누비자 자전거 재배치 알고리즘 특허 (원본 이미지 없음) -->
-          <article class="project-card reveal" data-category="ip data">
-            <figure class="project-figure is-empty" aria-hidden="true">
-              <span class="code">Patent</span>
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">창원시 누비자 자전거 재배치 알고리즘</h2>
-              <p class="project-meta"><span class="role">팀원</span><span>2023</span><span>Patent · Algorithm</span></p>
-              <p class="project-desc">자전거 재배치 최적화 알고리즘 개발 및 특허 출원. 수요 예측과 재배치 효율 극대화 모델 설계.</p>
-              <p class="project-result"><span class="k">성과</span>특허 출원</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>창원시 누비자 이용 데이터 수집 및 전처리</li><li>시간별/지역별 이용 패턴 분석</li><li>재배치 알고리즘 구현 지원</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>Optimization</li><li>Algorithm</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Patent---bicycle-Algorithm" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <!-- 4. 누비자 특허 -->
+          <article class="card reveal" style="--d:1" id="p-nubija" data-category="ip data">
+            <div class="card-media is-empty" aria-hidden="true"><span>Patent</span></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Patent · Algorithm</span><span class="chip">2023</span></div>
+              <h2 class="card-title">창원시 누비자 자전거 재배치 알고리즘</h2>
+              <p class="card-desc">자전거 재배치 최적화 알고리즘 개발 및 특허 출원. 수요 예측과 재배치 효율 극대화 모델 설계.</p>
+              <p class="card-result">특허 출원</p>
+              <ul class="card-list"><li>창원시 누비자 이용 데이터 수집 및 전처리</li><li>시간별/지역별 이용 패턴 분석</li><li>재배치 알고리즘 구현 지원</li></ul>
+              <p class="card-stack">Python · Optimization · Algorithm</p>
+              <div class="card-foot"><a class="gh" href="https://github.com/park-jin-seong1005/Patent---bicycle-Algorithm" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <!-- 5. 저작권 - RPA 소프트웨어 (원본 이미지 없음) -->
-          <article class="project-card reveal" data-category="ip">
-            <figure class="project-figure is-empty" aria-hidden="true">
-              <span class="code">Copyright</span>
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">제조기업 사무자동화를 위한 RPA 소프트웨어</h2>
-              <p class="project-meta"><span class="role">팀원</span><span>Copyright · RPA</span></p>
-              <p class="project-desc">경남 소재 제조기업(㈜신스윈)의 주문·재고 관리 프로세스를 자동화하기 위해 RPA(Robotic Process Automation) 플랫폼을 개발. Data Provider, Excel 자동 계산 모듈(AEC) 설계 및 테스트를 통해 반복적 수작업을 제거하고 인적 오류를 최소화.</p>
-              <p class="project-result"><span class="k">성과</span>저작권 등록 완료</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>요구사항 분석 지원</li><li>데이터 흐름 설계 참여</li><li>Excel 자동화 로직 구현 및 테스트 수행</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>RPA</li><li>Excel Automation</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="secondary" href="https://github.com/park-jin-seong1005/RPA-SW" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <!-- 5. RPA 저작권 -->
+          <article class="card reveal" id="p-rpa" data-category="ip">
+            <div class="card-media is-empty" aria-hidden="true"><span>Copyright</span></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Copyright · RPA</span></div>
+              <h2 class="card-title">제조기업 사무자동화를 위한 RPA 소프트웨어</h2>
+              <p class="card-desc">경남 소재 제조기업(㈜신스윈)의 주문·재고 관리 프로세스를 자동화하기 위해 RPA(Robotic Process Automation) 플랫폼을 개발. Data Provider, Excel 자동 계산 모듈(AEC) 설계 및 테스트를 통해 반복적 수작업을 제거하고 인적 오류를 최소화.</p>
+              <p class="card-result">저작권 등록 완료</p>
+              <ul class="card-list"><li>요구사항 분석 지원</li><li>데이터 흐름 설계 참여</li><li>Excel 자동화 로직 구현 및 테스트 수행</li></ul>
+              <p class="card-stack">Python · RPA · Excel Automation</p>
+              <div class="card-foot"><a class="gh" href="https://github.com/park-jin-seong1005/RPA-SW" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <!-- 6. 영주시 산사태 확률 -->
-          <article class="project-card reveal" data-category="ai data">
-            <figure class="project-figure">
-              <img src="images/영주시.png" alt="산사태 예측 파이프라인: 기상·토양도·임상도·산사태 이력 데이터 통합, 전처리 후 SVM·Random Forest·Gradient Boosting 모델링" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">영주시 산사태 확률 분석</h2>
-              <p class="project-context">2024 영주시 산사태 발생 확률 예측 프로젝트</p>
-              <p class="project-meta"><span class="role">팀원</span><span>2024</span><span>Data · AI</span></p>
-              <p class="project-desc">기상 및 지형 데이터를 기반으로 산사태 발생 확률 예측 모델 개발. 데이터 분석 및 시각화 수행.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>기상 및 지형 데이터 전처리</li><li>XGBoost 모델 하이퍼파라미터 튜닝</li><li>모델 성능 평가 및 검증</li><li>결과 시각화</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>XGBoost</li><li>pandas</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Landslide-prediction-model-main/tree/master" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <!-- 6. 영주시 산사태 -->
+          <article class="card reveal" style="--d:1" id="p-landslide" data-category="ai data">
+            <div class="card-media"><img src="images/영주시.png" alt="산사태 예측 파이프라인: 기상·토양도·임상도·산사태 이력 데이터 통합, 전처리 후 SVM·Random Forest·Gradient Boosting 모델링" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Data · AI</span><span class="chip">2024</span></div>
+              <h2 class="card-title">영주시 산사태 확률 분석</h2>
+              <p class="card-ctx">2024 영주시 산사태 발생 확률 예측 프로젝트</p>
+              <p class="card-desc">기상 및 지형 데이터를 기반으로 산사태 발생 확률 예측 모델 개발. 데이터 분석 및 시각화 수행.</p>
+              <ul class="card-list"><li>기상 및 지형 데이터 전처리</li><li>XGBoost 모델 하이퍼파라미터 튜닝</li><li>모델 성능 평가 및 검증</li><li>결과 시각화</li></ul>
+              <p class="card-stack">Python · XGBoost · pandas</p>
+              <div class="card-foot"><a class="gh" href="https://github.com/park-jin-seong1005/Landslide-prediction-model-main/tree/master" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
           <!-- 7. 국방부 군대앱 -->
-          <article class="project-card reveal" data-category="app">
-            <figure class="project-figure">
-              <img src="images/국방.png" alt="국방부 군대앱 화면: 로그인, 관리자 화면, 결식 확인 QR코드 화면" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">국방부 군대앱</h2>
-              <p class="project-context">2024 국방부 군대앱(식단, PX 정보 제공) 개발</p>
-              <p class="project-meta"><span class="role">팀원</span><span>2024</span><span>App · Web</span></p>
-              <p class="project-desc">군 복무자 대상 모바일 앱 개발 프로젝트. 국방부 표준식단·PX 인기품목 데이터 연동, QR코드 생성 기능, 로그인·회원가입 및 군번 기반 사용자 구분 기능 구현.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>React Native 기반 프론트엔드 개발</li><li>Node.js 백엔드 API 설계</li><li>MySQL 데이터베이스 모델링 및 데이터 연동</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>React Native</li><li>Node.js</li><li>MySQL</li><li>QR Code</li><li>Open API</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="secondary" href="https://github.com/park-jin-seong1005/React" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <article class="card reveal" id="p-army" data-category="app">
+            <div class="card-media"><img src="images/국방.png" alt="국방부 군대앱 화면: 로그인, 관리자 화면, 결식 확인 QR코드 화면" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">App · Web</span><span class="chip">2024</span></div>
+              <h2 class="card-title">국방부 군대앱</h2>
+              <p class="card-ctx">2024 국방부 군대앱(식단, PX 정보 제공) 개발</p>
+              <p class="card-desc">군 복무자 대상 모바일 앱 개발 프로젝트. 국방부 표준식단·PX 인기품목 데이터 연동, QR코드 생성 기능, 로그인·회원가입 및 군번 기반 사용자 구분 기능 구현.</p>
+              <ul class="card-list"><li>React Native 기반 프론트엔드 개발</li><li>Node.js 백엔드 API 설계</li><li>MySQL 데이터베이스 모델링 및 데이터 연동</li></ul>
+              <p class="card-stack">React Native · Node.js · MySQL · QR Code · Open API</p>
+              <div class="card-foot"><a class="gh" href="https://github.com/park-jin-seong1005/React" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
 
-          <!-- 8. 빅데이터 해커톤 (원본 이미지 없음) -->
-          <article class="project-card reveal" data-category="data">
-            <figure class="project-figure is-empty" aria-hidden="true">
-              <span class="code">Idea · Data</span>
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">서울시 재비산먼지 AI 예측 아이디어 제안</h2>
-              <p class="project-context">2024 빅데이터 해커톤</p>
-              <p class="project-meta"><span class="role">팀원</span><span>2024</span><span>Data · Idea</span></p>
-              <p class="project-desc">서울시 미세먼지 데이터를 활용한 AI 예측 및 시스템 개선 아이디어를 제안. 데이터 활용 전략과 모델 구조 컨셉 설계.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>재비산먼지 예측 모델 아이디어 제안</li><li>데이터 시각화 및 발표 자료 작성</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>pandas</li></ul></dd></div>
-              </dl>
+          <!-- 8. 재비산먼지 -->
+          <article class="card reveal" style="--d:1" id="p-dust" data-category="data">
+            <div class="card-media is-empty" aria-hidden="true"><span>Idea · Data</span></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Data · Idea</span><span class="chip">2024</span></div>
+              <h2 class="card-title">서울시 재비산먼지 AI 예측 아이디어 제안</h2>
+              <p class="card-ctx">2024 빅데이터 해커톤</p>
+              <p class="card-desc">서울시 미세먼지 데이터를 활용한 AI 예측 및 시스템 개선 아이디어를 제안. 데이터 활용 전략과 모델 구조 컨셉 설계.</p>
+              <ul class="card-list"><li>재비산먼지 예측 모델 아이디어 제안</li><li>데이터 시각화 및 발표 자료 작성</li></ul>
+              <p class="card-stack">Python · pandas</p>
             </div>
           </article>
 
-          <!-- 9. 킥보드 위험감지 시스템 -->
-          <article class="project-card reveal" data-category="ai">
-            <figure class="project-figure">
-              <img src="images/kickboard.png" alt="킥보드 위험감지 시스템 개념도: 후방 카메라 정보 수집, 브레이크 작동, 점멸등 사용" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">킥보드 위험감지 시스템</h2>
-              <p class="project-context">2024 창업아이디어 경진대회</p>
-              <p class="project-meta"><span class="role">팀원</span><span>2024</span><span>AI · Idea</span></p>
-              <p class="project-desc">전기 킥보드 안전을 위한 위험 감지 시스템 개발. 센서 데이터 기반 위험 상황 판단 및 경고 시스템 구현.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>장애물 감지 알고리즘 개발</li><li>위험 상황 판단 모델 학습</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>Idea</li><li>Algorithm</li></ul></dd></div>
-              </dl>
+          <!-- 9. 킥보드 -->
+          <article class="card reveal" id="p-kickboard" data-category="ai">
+            <div class="card-media"><img src="images/kickboard.png" alt="킥보드 위험감지 시스템 개념도: 후방 카메라 정보 수집, 브레이크 작동, 점멸등 사용" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">AI · Idea</span><span class="chip">2024</span></div>
+              <h2 class="card-title">킥보드 위험감지 시스템</h2>
+              <p class="card-ctx">2024 창업아이디어 경진대회</p>
+              <p class="card-desc">전기 킥보드 안전을 위한 위험 감지 시스템 개발. 센서 데이터 기반 위험 상황 판단 및 경고 시스템 구현.</p>
+              <ul class="card-list"><li>장애물 감지 알고리즘 개발</li><li>위험 상황 판단 모델 학습</li></ul>
+              <p class="card-stack">Python · Idea · Algorithm</p>
             </div>
           </article>
 
-          <!-- 10. 경상남도 빅데이터 공모전 -->
-          <article class="project-card reveal" data-category="data">
-            <figure class="project-figure">
-              <img src="images/경상남도.png" alt="경상남도 관광지 군집 분석 지도: 테마·계절별 관광지 군집 표시" loading="lazy">
-            </figure>
-            <div class="project-body">
-              <h2 class="project-title">경상남도 관광지 분석</h2>
-              <p class="project-context">2024 경상남도 빅데이터 공모전</p>
-              <p class="project-meta"><span class="role">팀원</span><span>2024</span><span>Data</span></p>
-              <p class="project-desc">경상남도 관광지 데이터를 분석하고, 방문객 패턴 예측 및 추천 시스템 설계.</p>
-              <dl class="spec-list">
-                <div><dt class="k">수행 내용</dt><dd><ul class="bullet-list"><li>관광지 데이터 크롤링 및 수집</li><li>데이터 정제</li><li>시각화</li></ul></dd></div>
-                <div><dt class="k">기술</dt><dd><ul class="tags"><li>Python</li><li>pandas</li><li>Web Crawling</li><li>Clustering</li></ul></dd></div>
-              </dl>
-              <div class="project-actions">
-                <a class="secondary" href="https://github.com/park-jin-seong1005/Gyeongsangnam-do-Tourism-Data-Analysis-main/tree/master" target="_blank" rel="noopener">GitHub ↗</a>
-              </div>
+          <!-- 10. 경상남도 -->
+          <article class="card reveal" style="--d:1" id="p-gyeongnam" data-category="data">
+            <div class="card-media"><img src="images/경상남도.png" alt="경상남도 관광지 군집 분석 지도: 테마·계절별 관광지 군집 표시" loading="lazy"></div>
+            <div class="card-body">
+              <div class="card-tags"><span class="chip">팀원</span><span class="chip">Data</span><span class="chip">2024</span></div>
+              <h2 class="card-title">경상남도 관광지 분석</h2>
+              <p class="card-ctx">2024 경상남도 빅데이터 공모전</p>
+              <p class="card-desc">경상남도 관광지 데이터를 분석하고, 방문객 패턴 예측 및 추천 시스템 설계.</p>
+              <ul class="card-list"><li>관광지 데이터 크롤링 및 수집</li><li>데이터 정제</li><li>시각화</li></ul>
+              <p class="card-stack">Python · pandas · Web Crawling · Clustering</p>
+              <div class="card-foot"><a class="gh" href="https://github.com/park-jin-seong1005/Gyeongsangnam-do-Tourism-Data-Analysis-main/tree/master" target="_blank" rel="noopener">GitHub ↗</a></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="cta reveal">
-          <div>
-            <span class="eyebrow">Repository</span>
-            <p class="cta-title">전체 저장소는<br>GitHub에서 확인하실 수 있습니다.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 ↗</a>
-            <a class="btn btn-outline" href="research.html">연구 성과 <span class="arrow" aria-hidden="true">→</span></a>
+    <section class="sec sec-soft">
+      <div class="wrap">
+        <div class="cta-band reveal-scale">
+          <h2 class="h-sec">전체 저장소는<br>GitHub에서 확인할 수 있습니다</h2>
+          <p>프로젝트 코드와 연구 결과물을 정리해 두었습니다.</p>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 <span class="arr" aria-hidden="true">↗</span></a>
+            <a class="btn btn-on-dark" href="research.html">연구 성과</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer on-dark">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap">
       <div class="footer-top">
-        <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-          </svg>
-          <span class="brand-text">
-            <span class="brand-name">PARK JINSEONG</span>
-            <span class="brand-sub">SW · AI DEVELOPER</span>
-          </span>
-        </a>
-        <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+          <p>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생 · 신입 SW · AI 개발자</p>
+        </div>
+        <div><h4>소개</h4><ul><li><a href="about.html">프로필</a></li><li><a href="about.html#experience">주요 경험</a></li><li><a href="about.html#lab">연구실</a></li></ul></div>
+        <div><h4>작업</h4><ul><li><a href="projects.html">프로젝트</a></li><li><a href="research.html">연구 성과</a></li><li><a href="skills.html">기술</a></li></ul></div>
+        <div><h4>이력 · 연락</h4><ul><li><a href="achievements.html">수상 · 자격 · 교육</a></li><li><a href="contact.html">연락하기</a></li><li><a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
-        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
-      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Park JinSeong</span><span>github.com/park-jin-seong1005</span></div>
     </div>
   </footer>
 
