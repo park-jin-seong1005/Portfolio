@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact | Park JinSeong</title>
-  <meta name="description" content="박진성 연락처 및 GitHub" />
+  <title>연락하기 | 박진성 포트폴리오</title>
+  <meta name="description" content="박진성 연락처 · GitHub" />
 
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <script>document.documentElement.classList.add('js');</script>
   <link rel="stylesheet" href="style.css" />
@@ -18,103 +15,65 @@
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-        </svg>
-        <span class="brand-text">
-          <span class="brand-name">PARK JINSEONG</span>
-          <span class="brand-sub">SW · AI DEVELOPER</span>
-        </span>
-      </a>
-
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
-        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-
-      <nav class="nav" id="siteNav" aria-label="주 메뉴">
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-        </ul>
-        <a class="nav-cta" href="contact.html" aria-current="page">Contact <span aria-hidden="true">→</span></a>
+  <header class="gnb" id="gnb">
+    <div class="wrap gnb-in">
+      <a class="logo" href="index.html" aria-label="박진성 포트폴리오 홈"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+      <nav class="gnb-nav" id="gnbNav" aria-label="주 메뉴">
+        <a href="about.html">소개</a>
+        <a href="projects.html">프로젝트</a>
+        <a href="research.html">연구</a>
+        <a href="skills.html">기술</a>
+        <a href="achievements.html">이력</a>
+        <a class="m-only" href="contact.html" aria-current="page">연락하기</a>
       </nav>
+      <a class="btn btn-primary btn-sm gnb-cta" href="contact.html" aria-current="page">연락하기</a>
+      <button class="gnb-toggle" id="gnbToggle" type="button" aria-expanded="false" aria-controls="gnbNav" aria-label="메뉴 열기"><span></span></button>
     </div>
   </header>
 
   <main id="main">
-    <section class="page-hero on-dark">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li><span aria-current="page">Contact</span></li>
-        </ol>
-        <span class="eyebrow">Contact</span>
-        <h1 class="page-title">연락처</h1>
-        <p class="page-desc">프로젝트 코드와 연구 결과물은 GitHub에서 확인하실 수 있습니다.</p>
+    <section class="page-hero">
+      <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span></div>
+      <div class="wrap">
+        <ol class="crumb reveal"><li><a href="index.html">홈</a></li><li><span aria-current="page">연락하기</span></li></ol>
+        <h1 class="display reveal" style="--d:1">함께 이야기<br><span class="grad-text">나눠요</span></h1>
+        <p class="lead reveal" style="--d:2">프로젝트 코드와 연구 결과물은 GitHub에서 확인하실 수 있습니다.</p>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-main on-dark reveal">
-            <div>
-              <span class="eyebrow">GitHub</span>
-              <h2>park-jin-seong1005</h2>
-              <p class="url">github.com/park-jin-seong1005</p>
-            </div>
-            <div class="cta-actions">
-              <a class="btn btn-primary" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 ↗</a>
-            </div>
+    <section class="sec" style="padding-top:clamp(24px,4vw,48px)">
+      <div class="wrap">
+        <div class="cta-band reveal-scale">
+          <span class="kicker" style="color:#BFE3FF">GitHub</span>
+          <h2 class="h-sec" style="margin-top:12px">park-jin-seong1005</h2>
+          <p>github.com/park-jin-seong1005</p>
+          <div class="hero-actions">
+            <a class="btn btn-white" href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub 방문 <span class="arr" aria-hidden="true">↗</span></a>
           </div>
+        </div>
 
-          <ul class="quick-links reveal" aria-label="바로가기">
-            <li><a href="projects.html"><span><span class="t">Projects</span><span class="d">프로젝트 10건과 대표 프로젝트 상세</span></span><span aria-hidden="true">→</span></a></li>
-            <li><a href="research.html"><span><span class="t">Research</span><span class="d">KCI 논문 · 특허 · 저작권 · 학회 발표</span></span><span aria-hidden="true">→</span></a></li>
-            <li><a href="skills.html"><span><span class="t">Skills</span><span class="d">기술 스택과 숙련도</span></span><span aria-hidden="true">→</span></a></li>
-            <li><a href="achievements.html"><span><span class="t">Achievements</span><span class="d">수상 · 공모전 · 자격증 · 교육 이력</span></span><span aria-hidden="true">→</span></a></li>
-          </ul>
+        <div class="grid-2" style="margin-top:28px">
+          <a class="card reveal" href="projects.html"><div class="card-body"><span class="kicker">프로젝트</span><h2 class="card-title">프로젝트 10건과 대표 프로젝트 상세</h2><div class="card-foot"><span class="link-arrow">바로 가기 <span class="arr" aria-hidden="true">→</span></span></div></div></a>
+          <a class="card reveal" style="--d:1" href="research.html"><div class="card-body"><span class="kicker">연구</span><h2 class="card-title">KCI 논문 · 특허 · 저작권 · 학회 발표</h2><div class="card-foot"><span class="link-arrow">바로 가기 <span class="arr" aria-hidden="true">→</span></span></div></div></a>
+          <a class="card reveal" href="skills.html"><div class="card-body"><span class="kicker">기술</span><h2 class="card-title">기술 스택과 숙련도</h2><div class="card-foot"><span class="link-arrow">바로 가기 <span class="arr" aria-hidden="true">→</span></span></div></div></a>
+          <a class="card reveal" style="--d:1" href="achievements.html"><div class="card-body"><span class="kicker">이력</span><h2 class="card-title">수상 · 공모전 · 자격증 · 교육 이력</h2><div class="card-foot"><span class="link-arrow">바로 가기 <span class="arr" aria-hidden="true">→</span></span></div></div></a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer on-dark">
-    <div class="container">
+  <footer class="footer">
+    <div class="wrap">
       <div class="footer-top">
-        <a class="brand" href="index.html" aria-label="Park JinSeong 홈">
-          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
-            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
-            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
-          </svg>
-          <span class="brand-text">
-            <span class="brand-name">PARK JINSEONG</span>
-            <span class="brand-sub">SW · AI DEVELOPER</span>
-          </span>
-        </a>
-        <ul class="footer-nav">
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="achievements.html">Achievements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <div>
+          <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">PJS</span><span>박진성</span></a>
+          <p>창원대학교 컴퓨터공학과 분산멀티미디어 연구실 학부연구생 · 신입 SW · AI 개발자</p>
+        </div>
+        <div><h4>소개</h4><ul><li><a href="about.html">프로필</a></li><li><a href="about.html#experience">주요 경험</a></li><li><a href="about.html#lab">연구실</a></li></ul></div>
+        <div><h4>작업</h4><ul><li><a href="projects.html">프로젝트</a></li><li><a href="research.html">연구 성과</a></li><li><a href="skills.html">기술</a></li></ul></div>
+        <div><h4>이력 · 연락</h4><ul><li><a href="achievements.html">수상 · 자격 · 교육</a></li><li><a href="contact.html">연락하기</a></li><li><a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">GitHub ↗</a></li></ul></div>
       </div>
-      <div class="footer-bottom">
-        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
-        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
-      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Park JinSeong</span><span>github.com/park-jin-seong1005</span></div>
     </div>
   </footer>
 
