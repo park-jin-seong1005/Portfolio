@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>세종AI 경진대회 – 자율주행 위험감지 시스템 | Projects | Park JinSeong</title>
+  <meta name="description" content="영상 데이터 기반 객체 탐지 및 위험 상황 예측 — 자율주행 위험감지 시스템" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Park JinSeong 홈">
+        <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+          <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
+          <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">PARK JINSEONG</span>
+          <span class="brand-sub">SW · AI DEVELOPER</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="메뉴 열기">
+        <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="주 메뉴">
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html" aria-current="true">Projects</a></li>
+          <li><a href="../research.html">Research</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../achievements.html">Achievements</a></li>
+        </ul>
+        <a class="nav-cta" href="../contact.html">Contact <span aria-hidden="true">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero on-dark">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><span aria-current="page">Sejong AI</span></li>
+        </ol>
+        <span class="eyebrow">PRJ-03 · Featured Project</span>
+        <h1 class="page-title">세종AI 경진대회 –<br>자율주행 위험감지 시스템</h1>
+        <p class="page-desc">자율주행 차량 위험 감지 모델 개발, 영상 데이터 기반 객체 탐지 및 위험 상황 예측. PyTorch와 OpenCV 활용.</p>
+        <dl class="detail-meta">
+          <div><dt class="label">Year</dt><dd class="mono">2024</dd></div>
+          <div><dt class="label">Role</dt><dd>팀장</dd></div>
+          <div><dt class="label">Category</dt><dd>AI · Vision</dd></div>
+          <div><dt class="label">Event</dt><dd>2024 세종AI 경진대회</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <figure class="detail-figure reveal">
+          <div class="detail-figure-img">
+            <img src="../images/SEJONG.png" alt="YOLOv8 객체 탐지 결과: 도로 위 보행자와 킥보드 탐지">
+          </div>
+          <figcaption><span class="label">FIG. 03</span><span>YOLOv8 기반 객체 탐지 결과</span></figcaption>
+        </figure>
+
+        <div class="detail-layout">
+          <div>
+            <section class="detail-section reveal" aria-labelledby="s1">
+              <h2 id="s1"><span class="label">01</span>개요</h2>
+              <p>자율주행 차량 위험 감지 모델 개발, 영상 데이터 기반 객체 탐지 및 위험 상황 예측. PyTorch와 OpenCV 활용.</p>
+            </section>
+
+            <section class="detail-section reveal" aria-labelledby="s2">
+              <h2 id="s2"><span class="label">02</span>역할 및 수행 내용</h2>
+              <p><strong>팀장</strong></p>
+              <ul class="bullet-list">
+                <li>프로젝트 기획 및 일정 관리</li>
+                <li>YOLOv8 데이터 전처리</li>
+                <li>YOLOv8 기반 객체 탐지 모델 개발</li>
+                <li>위험 상황 판단 알고리즘 설계</li>
+              </ul>
+            </section>
+
+            <section class="detail-section reveal" aria-labelledby="s3">
+              <h2 id="s3"><span class="label">03</span>기술 스택</h2>
+              <ul class="tags"><li>Python</li><li>PyTorch</li><li>OpenCV</li><li>YOLOv8</li><li>U-Net</li></ul>
+            </section>
+
+            <section class="detail-section reveal" aria-labelledby="s4">
+              <h2 id="s4"><span class="label">04</span>성과</h2>
+              <ul class="bullet-list">
+                <li>2024 세종AI 경진대회 — 자율주행 위험감지 시스템 개발</li>
+              </ul>
+            </section>
+          </div>
+
+          <aside class="detail-aside reveal" aria-label="프로젝트 정보">
+            <div class="aside-card">
+              <div class="records-head"><span class="label">Links</span></div>
+              <ul class="aside-links">
+                <li><a href="https://github.com/park-jin-seong1005/Sejong-AI" target="_blank" rel="noopener"><span>GitHub<span class="sub">park-jin-seong1005/Sejong-AI</span></span><span aria-hidden="true">↗</span></a></li>
+              </ul>
+            </div>
+            <div class="aside-card">
+              <div class="records-head"><span class="label">Spec</span><span class="label">PRJ-03</span></div>
+              <dl class="spec-list">
+                <div><dt class="label">Role</dt><dd>팀장</dd></div>
+                <div><dt class="label">Year</dt><dd>2024</dd></div>
+                <div><dt class="label">Model</dt><dd>YOLOv8 · U-Net</dd></div>
+                <div><dt class="label">Tools</dt><dd>PyTorch · OpenCV</dd></div>
+              </dl>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <nav class="pager" aria-label="대표 프로젝트 이동">
+          <a class="prev" href="deepfake.html"><span class="label">← Previous · PRJ-02</span><span class="t">SW-딥페이크 음성 검출</span></a>
+          <a class="next" href="go-around.html"><span class="label">Next · PRJ-01 →</span><span class="t">Go-Around 모델 개발 및 제주공항 날씨 분석</span></a>
+        </nav>
+        <p class="pager-back"><a class="text-link" href="../projects.html">전체 프로젝트 목록 <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer-top">
+        <a class="brand" href="../index.html" aria-label="Park JinSeong 홈">
+          <svg class="brand-mark" viewBox="0 0 34 34" fill="none" aria-hidden="true">
+            <path d="M1 1h24l8 8v24H1z" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M25 1v8h8" stroke="currentColor" stroke-width="1.5"/>
+            <text x="6" y="23" fill="currentColor" font-family="IBM Plex Mono, monospace" font-size="11" font-weight="500" letter-spacing=".5">PJS</text>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">PARK JINSEONG</span>
+            <span class="brand-sub">SW · AI DEVELOPER</span>
+          </span>
+        </a>
+        <ul class="footer-nav">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../research.html">Research</a></li>
+          <li><a href="../skills.html">Skills</a></li>
+          <li><a href="../achievements.html">Achievements</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Park JinSeong. All rights reserved.</span>
+        <a href="https://github.com/park-jin-seong1005?tab=repositories" target="_blank" rel="noopener">github.com/park-jin-seong1005 ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../main.js"></script>
+</body>
+</html>
