@@ -221,11 +221,12 @@ body.menu-open{ overflow: hidden; }
   position: absolute; border-radius: var(--r-md); overflow: hidden; background: #fff;
   box-shadow: 0 30px 60px -20px rgba(0,0,0,.45);
   animation: float 9s ease-in-out infinite;
+  aspect-ratio: 16 / 10;            /* 이미지 비율과 동일 */
 }
-.tile img{ width: 100%; height: 100%; object-fit: cover; object-position: top; }
-.tile.t1{ width: 40%; height: 78%; left: 6%; top: 14%; animation-delay: -1s; }
-.tile.t2{ width: 32%; height: 52%; left: 50%; top: 10%; animation-delay: -4s; }
-.tile.t3{ width: 26%; height: 44%; right: 4%; top: 48%; animation-delay: -6s; }
+.tile img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.tile.t1{ width: 46%; left: 5%;  top: 16%; animation-delay: -1s; }
+.tile.t2{ width: 34%; left: 54%; top: 10%; animation-delay: -4s; }
+.tile.t3{ width: 30%; right: 4%; top: 50%; animation-delay: -6s; }
 .tile.t2 img, .tile.t3 img{ object-fit: contain; background: #fff; padding: 10px; }
 @keyframes float{ 0%,100%{ transform: translateY(0); } 50%{ transform: translateY(-14px); } }
 
@@ -543,9 +544,9 @@ body.menu-open{ overflow: hidden; }
   .certs{ grid-template-columns: repeat(2, 1fr); }
   .hero-actions .btn{ flex: 1 1 auto; }
   .hero-media{ height: 300px; }
-  .tile.t1{ width: 58%; height: 70%; left: 5%; top: 16%; }
-  .tile.t2{ width: 40%; height: 46%; left: 56%; top: 8%; }
-  .tile.t3{ width: 40%; height: 40%; left: 56%; top: 58%; right: auto; }
+  .tile.t1{ width: 58%; left: 5%;  top: 20%; }
+  .tile.t2{ width: 40%; left: 56%; top: 8%; }
+  .tile.t3{ width: 40%; left: 56%; top: 52%; right: auto; }
   .rows > li{ grid-template-columns: 1fr; padding: 18px 20px; }
   .rows .r{ text-align: left; }
   .facts > div{ grid-template-columns: 1fr; gap: 2px; }
